@@ -1,0 +1,169 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, Yi Peng Ji & Raúl Marticorena
+# This file is distributed under the same license as the UBUMonitor package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: UBUMonitor \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-01-02 19:16+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../install.rst:2
+msgid "Instalación y arranque"
+msgstr ""
+
+#: ../../install.rst:4
+msgid ""
+"Para descargar el programa obtener la última versión disponible en: "
+"https://github.com/yjx0003/UBUMonitor/releases/latest."
+msgstr ""
+"To download the program, obtain the latest version available at: "
+"https://github.com/yjx0003/UBUMonitor/releases/latest."
+
+#: ../../install.rst:6
+msgid ""
+"Se mostrará una entrada similar a la siguiente (Nota: los números de "
+"versión irán cambiando en un futuro según evolucione el producto):"
+msgstr ""
+
+#: ../../install.rst:13
+msgid ""
+"En la zona de Assets se muestran los posibles ficheros a descargar para "
+"su ejecución. Solo interesan los tres primeros:"
+msgstr ""
+
+#: ../../install.rst:15
+msgid ""
+"``UBUMonitor.v2.5.0-stable-Win32-Portable.zip``: versión portable para "
+"sistemas operativos Windows 32 bits."
+msgstr ""
+
+#: ../../install.rst:16
+msgid ""
+"``UBUMonitor.v2.5.0-stable-Win64-Portable.zip``: versión portable para "
+"sistemas operativos Windows 64 bits."
+msgstr ""
+
+#: ../../install.rst:17
+msgid ""
+"``UBUMonitor.v2.5.0-stable.jar``: versión ejecutable con Java instalado "
+"en el sistema operativo. Versión para Windows, GNU/Linux o Mac."
+msgstr ""
+
+#: ../../install.rst:19
+msgid "Se ofrecen dos versiones:"
+msgstr ""
+
+#: ../../install.rst:21
+msgid ""
+"Versión portable (con mínima instalación) para Windows descomprimiendo un"
+" fichero .zip."
+msgstr ""
+
+#: ../../install.rst:22
+msgid ""
+"Versión fichero ejecutable java (con extensión .jar) para TODAS las "
+"plataformas."
+msgstr ""
+
+#: ../../install.rst:25
+msgid "Versión portable para Windows"
+msgstr ""
+
+#: ../../install.rst:27
+msgid ""
+"Si se trabaja en Windows, y no se quiere instalar Java en el equipo "
+"actual, se sugiere descargar la versión portable que corresponda, según "
+"el sistema operativo sea de 32 o 64 bits."
+msgstr ""
+
+#: ../../install.rst:29
+msgid "Pasos para su instalación:"
+msgstr ""
+
+#: ../../install.rst:31
+msgid ""
+"Copiar el fichero descargado con sufijo ``-Portable.zip`` a un directorio"
+" a libre elección del usuario, donde tenga permisos de escritura y "
+"ejecución."
+msgstr ""
+
+#: ../../install.rst:32
+msgid ""
+"Descomprimir el fichero con sufijo ``-Portable.zip`` correspondiente con "
+"alguna herramienta tipo WinZip, 7Zip, WinRar, etc."
+msgstr ""
+
+#: ../../install.rst:33
+msgid ""
+"En el directorio generado al descomprimir, hacer doble click sobre el "
+"fichero ejecutable con extensión .exe (e.g. ``UBUMonitor.v2.5.0-stable-"
+"Win64.exe``)"
+msgstr ""
+
+#: ../../install.rst:35
+msgid ""
+"Nota: las versiones portables incluyen dentro del fichero .zip un JDK 8 "
+"con JavaFX, por eso ocupan más espacio."
+msgstr ""
+
+#: ../../install.rst:38
+msgid "Versión ejecutable con Java 8"
+msgstr ""
+
+#: ../../install.rst:40
+msgid ""
+"Si no se trabaja en Windows, o bien no se quiere usar la versión "
+"portable, es requisito tener instalada una versión de Java 8. En "
+"particular la distribución oficial de Oracle que sí incluye las "
+"bibliotecas de JavaFX. Con versiones posteriores no funcionará "
+"correctamente, así como tampoco con versiones libres (e.g. OpenJDK, etc.)"
+" que no incluyan las bibliotecas de JavaFX."
+msgstr ""
+
+#: ../../install.rst:43
+msgid ""
+"Suponiendo que se tiene ya instalada dicha versión Java 8 (y que es la "
+"versión de Java activa) se siguen los siguientes pasos:"
+msgstr ""
+
+#: ../../install.rst:45
+msgid ""
+"Copiar el fichero .jar a un directorio donde el usuario tenga permisos de"
+" escritura y ejecución."
+msgstr ""
+
+#: ../../install.rst:46
+msgid "Probar a ejecutar haciendo doble click sobre el fichero .jar."
+msgstr ""
+
+#: ../../install.rst:48
+msgid ""
+"Si Java está asociado correctamente a la extensión .jar se ejecutar la "
+"aplicación. Si no, ejecutar desde una consola del sistema operativo, en "
+"el directorio donde se tenga el fichero .jar lo siguiente:"
+msgstr ""
+
+#: ../../install.rst:51
+msgid "``$> java -jar UBUMonitor.v2.5.0.jar``"
+msgstr ""
+
+#: ../../install.rst:53
+msgid "Nota: el número de versión puede ir cambiando"
+msgstr ""
+
+#: ../../install.rst:55
+msgid ""
+"Si todo va correcto se iniciará la ejecución de la aplicación. En caso "
+"contrario, verificar de nuevo los pasos previos."
+msgstr ""
+

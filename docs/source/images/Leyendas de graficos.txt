@@ -1,0 +1,4 @@
+Selección de asignatura (curso) en primer acceso
+Acceso posterior a la asignatura
+Barra de herramientas
+Ventana prinicipal de inicio con datos de la asignatura cargados

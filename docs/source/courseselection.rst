@@ -8,7 +8,7 @@ The main area shows the list of courses (or subjects) in which the current user 
 * **Recent**: courses recently accessed by the user.
 * **Highlighted**: courses highlighted by the user.
 * **All**: complete set of courses in which the user is enrolled.
-* In progress**: current course, with start and end date including the current date.
+* **In progress**: current course, with start and end date including the current date.
 * **Futures**: courses to be taken, with a start date later than the current date.
 * **Past**: courses already completed, with an end date prior to the current date.
 
@@ -25,11 +25,11 @@ The first time a course is selected the text **Last local update** will be displ
 
 Additionally the **advanced option** of downloading **Web logs only** is left if you want to download only logs from the browser (ignoring client, *web service*, *restore* or unclassified logs). By default it is unchecked and only recommended for advanced users.
 
-We press the button **Enter** to start the download. This data download process may **take several minutes for the first download** (depending on the number of students, size of the qualifier, number of new records and activities with active completion tracking). 
+We press the button **Enter** to start the download. This data download process may **take several minutes for the first download** (depending on the number of students, size of the gradebook, number of new logs and activities with active completion tracking). 
 
-A progress bar will be displayed at the bottom indicating the stages completed (uploading of the scorer, downloading of activity completion, downloading of the log and parsing of logs). **Further updates will be shorter**, as the log loading is incremental, although the qualifier and activity completion is always fully updated.
+A progress bar will be displayed at the bottom indicating the stages completed (uploading of the gradebook, downloading of activity completion, downloading of the log and parsing of logs). **Further updates will be shorter**, as the log loading is incremental, although the gradebook and activity completion is always fully updated.
 
-On the other hand, it is **VERY IMPORTANT** that the percentage information is visible in the appraiser (by default it is visible in Moodle) for correct reading and subsequent display of the appraisals.
+On the other hand, it is **VERY IMPORTANT** that the percentage information is visible in the gradebook configuration (by default it is visible in Moodle) for correct reading and subsequent display of the grades.
 
 Once the download is finished, the main window of the application will be shown.
 
@@ -91,6 +91,6 @@ In the case that the Moodle password has been changed recently, a pop-up window 
   
   Password changed
   
-When the old password has been successfully entered, the local cached file is encrypted and saved with the new password. This is **required**, because the information is **always** encrypted**.
+When the old password has been successfully entered, the local cached file is encrypted and saved with the new password. This is **required**, because the information is **always encrypted**.
 
-**VERY IMPORTANT**: It is necessary to remember the previous password, in order to recover the data. If not, the cache must be cleared (**Clear** button), to force the courses to be reloaded.
+**VERY IMPORTANT**: It is necessary to remember the previous password, in order to recover the data. If not, the cache must be cleared (**Clean** button), to force the courses to be reloaded.

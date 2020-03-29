@@ -9,14 +9,14 @@ Initial Content
 If the portable version is installed, unzipping creates a directory:
 
 * ``UBUMonitor.v2.6.3-stable-Win64-Portable`` on Windows 64 bits.
-* UBUMonitor.v2.6.3-stable-Win32-Portable`` on 32-bit Windows.
-* UBUMonitor.v2.6.3-stable-Linux64-Portable`` on GNU/Linux 64-bit.
+* ``UBUMonitor.v2.6.3-stable-Win32-Portable`` on 32-bit Windows.
+* ``UBUMonitor.v2.6.3-stable-Linux64-Portable`` on GNU/Linux 64-bit.
 
 In the directory created, we will have the following content in Windows (32-bit content is equivalent):
 
 .. figure:: images/contenido_instalacion_portable_64bits.png
   :width: 350
-  :alt: Windows's content.
+  :alt: Content in Windows S.O.
   :align: center
   
   Content in a portable Windows installation (for 64-bit)
@@ -25,7 +25,7 @@ While in GNU/Linux we will have the following content:
 
 .. figure:: images/contenido_instalacion_portable_linux64bits.png
   :width: 350
-  :alt: GNU/Linux content.
+  :alt: Content in GNU/Linux S.O.
   :align: center
   
   Content in a portable installation on GNU/Linux (for 64 bits)

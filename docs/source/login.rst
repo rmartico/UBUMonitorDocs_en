@@ -12,7 +12,7 @@ Once the application is started, the login screen will be displayed. The window 
   
 Next, you must enter your **User** and **Password** credentials in Moodle. 
 
-**VERY IMPORTANT:** the application *Never* persistently stores, nor forwards to other servers, the *password* of the user, for security reasons. The source code is available for audit and you can check which data and to which server it is sent, with a network analysis software or *sniffer* (e.g. Wireshark, Microsoft Message Analyzer, Tcpdump, etc.).
+**VERY IMPORTANT:** the application **never** persistently stores, nor forwards to other servers, the *password* of the user, for security reasons. The source code is available for audit and you can check which data and to which server it is sent, with a network analysis software or *sniffer* (e.g. Wireshark, Microsoft Message Analyzer, Tcpdump, etc.).
 
 
 Online mode
@@ -22,7 +22,7 @@ In the **Host** field you must indicate the URL of the website of the chosen Moo
 
 For example:
 
-* to access the Mount Orange School test server you will literally put: ``https://school.moodledemo.net``.
+* to access the Mount Orange School test server you will literally put: ``https://school.moodledemo.net``
 * to access the UBU's Moodle server (UBUVirtual) you will literally put: ``https://ubuvirtual.ubu.es``
 
 It is recommended that you always access secure servers (with https://) to ensure that the information you send is encrypted.
@@ -46,7 +46,7 @@ The application **remembers** the *urls* of the servers that have been used **pr
   Suggested previously used hosts
 
 
-For convenience, the option is given to **Remember user** and **Remember host**, avoiding having to fill in the fields again in subsequent accesses. This information is saved in a ``config.properties`` file in the current directory, if we check one or both options. The **Delete** button allows you to remove the text from the three fields.
+For convenience, the option is given to **Remember user** and **Remember host**, avoiding having to fill in the fields again in subsequent accesses. This information is saved in a ``config.properties`` file in the current directory, if we check one or both options. The **Clear** button allows you to remove the text from the three fields.
 
 After entering the credentials we press the button **Enter**. If the data is valid, it will load the following screen, and if not, it will show an error message in the lower area of the window. 
 

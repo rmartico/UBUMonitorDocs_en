@@ -29,7 +29,7 @@ Another example, in the following figure, shows the corresponding message if the
 Error dialog
 ------------
 
-A modal dialogue is opened with a text describing the error and the option to display **Show details**. In the following figure we see an example of an error when losing the network connection when loading a course.
+A modal dialog is opened with a text describing the error and the option to display **Show details**. In the following figure we see an example of an error when losing the network connection when loading a course.
 
 
 .. figure:: images/error_sin_red_cargando_asignatura.png

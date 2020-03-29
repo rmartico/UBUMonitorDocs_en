@@ -23,16 +23,16 @@ By clicking on the **Logs** tab, in the lower left corner, several filtering opt
    * Months
    * All
    
-* **Start reference date**: the indicative start date shown when grouping. It initially takes the value of the subject configuration in Moodle.
-* **End reference date**: the indicative end date shown when grouping. Initially it takes as end date the minimum of the current date and the end date of the course if it exists.
+* **Start reference date**: the reference start date shown when grouping. It initially takes the value of the subject configuration in Moodle.
+* **End reference date**: the reference end date shown when grouping. Initially it takes as end date the minimum of the current date and the end date of the course if it exists.
 
 Note that the start and end reference date are not taken into account when making groupings. For example, when grouping by months and an initial date of 06/17/2019 to 06/24/2019, it will not show the logs between those two days, but will show all those of June.
 
 In the groupings by **Hours** and **Days of the week** they do not use the date selector, being calculated on the total of logs, therefore they are disabled.
 
-In the graphics, when you click on the points or elements of a specific student, it is positioned in the view of the corresponding user, to facilitate their identification. The student's file is available to consult additional information.
+In the charts, when you click on the points or elements of a specific student, it is positioned in the view of the corresponding user, to facilitate their identification. The student's file is available to consult additional information.
 
-In the lower left area, the possible tabs for selecting elements on which to generate the graphs are shown: **Components**, **Events**, **Sections** or **Course Modules**. Multiple selection is allowed on all of them and filtering by text.
+In the lower left area, the possible tabs for selecting elements on which to generate the charts are shown: **Components**, **Events**, **Sections** or **Course Modules**. Multiple selection is allowed on all of them and filtering by text.
 
 Components
 ----------
@@ -101,7 +101,7 @@ Setting the maximum value to **Change suggested maximum scale:** recalculates an
 HeatMap chart
 -------------
 
-Displays a "heatmap" for selected users The heatmap colours from red to green, from lower to higher intensity, in relation to the number of user accesses to the selected items and to the filter selection in the lower zone. 
+Displays a heatmap for selected users The heatmap colours from red to green, from lower to higher intensity, in relation to the number of user accesses to the selected items and to the filter selection in the lower zone. 
 
 .. figure:: images/GraficoHeatMap.png
   :width: 600
@@ -121,7 +121,7 @@ If we click on the upper legend in a range, for example on the zero value, those
   
 Setting the maximum value to **Change suggested maximum scale:** recalculates and adjusts the color palette.
 
-Cumulative Chart
+Cumulative chart
 ----------------
 
 Displays the accumulated value of the number of logs, over time. The average value is included for comparison with a dashed line. It allows to show the evolution along the course of the number of accesses by each student and to compare it with the rest.
@@ -134,7 +134,7 @@ Displays the accumulated value of the number of logs, over time. The average val
   Cumulative Chart
 
 
-Rel. Cumulative Chart
+Rel. Cumulative chart
 ---------------------
 
 Displays the cumulative value of the number of logs against the average value as a reference, over time. The measurement as a reference line always corresponds to the red dashed line at the zero point. It allows you to show the evolution relative to the average over the course of time.

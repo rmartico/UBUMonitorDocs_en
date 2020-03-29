@@ -15,7 +15,7 @@ Yes, you can have as many installations as you want, since each one goes in its 
 
 **Can I delete the data cache?**
 
-Yes, you can delete the cache directory manually from the operating system or by using the "Clear" button available in the course selection window. 
+Yes, you can delete the cache directory manually from the operating system or by using the "Clean" button available in the course selection window. 
 
 **How can I uninstall UBUMonitor?**
 

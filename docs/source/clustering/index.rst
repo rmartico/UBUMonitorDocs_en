@@ -47,7 +47,7 @@ In the top left corner you can select the specific clustering algorithm to be ap
   
   Partitional clustering algorithms.
 
-Depending on the algorithm selected, the different parameters to be set are shown on the right. Those parameters are different for each algorithm.
+Depending on the algorithm selected, different parameters to adjust are shown on the right. These parameters are different for each algorithm.
  
 .. figure:: images/opciones_particional.png
   :width: 600
@@ -56,169 +56,170 @@ Depending on the algorithm selected, the different parameters to be set are show
   
   Configuration options for partitional clustering
 
-Once the algorithm has been selected and its particular parameters have been set, it is **very important to indicate over which data you want to use**. It is mandatory to tick at least one of the posible options.
+Once the algorithm has been selected and its particular parameters have been set, it is **very important to indicate which data you want to use**. It is mandatory to tick at least one of the posible options.
 
-* **Registros**. Dentro de registros se puede indicar además:
+* **Logs**. Within logs you can also indicate the following:
 
-	* Componentes
-	* Eventos
-	* Sección
-	* Módulos curso
+	* Components
+	* Events
+	* Section
+	* Course models
 	
-* **Calificaciones**
-* **Finalización de actividad**
+* **Grades**
+* **Activity completion**
 
-**Si no se ha seleccionado ningún tipo de datos** se informa con un **mensaje de error**. Es muy importante y necesario confirmar el tipo de datos concreto sobre el que se realizará el clustering.
+**If no data type has been selected** an **error message** is displayed. It is crucial to confirm the specific data type on which clustering will be performed.
 
 .. figure:: images/seleccionar_datos.png
   :width: 600
-  :alt: Selección de datos
+  :alt: Data selection
   :align: center
   
-  Selección de datos
+  Data selection
   
-Si queremos eliminar del análisis aquellas características con valores constantes para todos las instancias, se marcará la opción *Filtrar datos* (por defecto está marcada). Si además queremos reducir la dimensionalidad del conjunto de entrada, activaremos la opción Reducir dimensionalidad, indicando el número de características a reducir (se aplica PCA para reducir la dimensión del conjunto de entrada, aunque reduce tiempos de ejecución, probablemente provocará una pérdida de calidad en el agrupamiento).
+If you want to exclude from the analysis those features with constant values for all instances, you will select the *Filter data* option (it is selected by default). If you also want to reduce the dimensionality of the input set, you will activate the "Reduce dimensionality" option, indicating the number of features to reduce (PCA is applied to reduce the dimension of the input set, although it reduces execution times, it may result in a loss of clustering quality).
 
-Dado que muchos algoritmos tienen un carácter aleatorio en su inicialización, se permite indicar un número de iteraciones a realizar. Se repetirá la ejecución del algoritmo el número indicado quedándonos con el mejor resultado (según su análisis de silueta).
+Since many algorithms have a random character in their initialization, yo can indicate the number of iterations to be performed. The algorithm will be therefore run the specified number of times, keeping the best result (based on its silhouette analysis).
 
-Como últimos valores a ajustar, están las fechas de inicio y fin para el filtrado de datos, permitiendo realizar el clustering sobre una vista temporal concreta.
+The last values to be set defines a specific time view to perform the clustering, by indicating the start and end dates for data filtering.
 
-Dado que el clustering es no supervisado, y en algunos algoritmos es necesario **sugerir el número de agrupaciones o clústeres manualmente**, se proporcionan dos métodos de inferencia del valor ideal, aunque no dejan de ser valores sugeridos. 
+Due to the fact that clustering is unsupervised, and the need of some algorithms to **manually suggest the number of groupings or clusters**, two methods of inferring the ideal value are provided.  However, they are still just suggested values. 
 
-Se proporciona el gráfico del codo y el análisis del valor de silueta. Eligiendo en el desplegable uno de los dos métodos y presionando el botón *Analizar*, se genera el gráfico correspondiente para el número de agrupaciones máximo elegido en el *slider*. 
+The elbow plot and the silhouette value analysis are provided. By choosing one of the two methods from the drop-down and pressing the *Analyze* button, the corresponding plot is generated for the maximum number of clusters chosen in the *slider*. 
   
 .. figure:: images/sugerencia_agrupaciones.png
   :width: 300
-  :alt: Sugerencia de número de clústeres
+  :alt: Suggested number of clusters
   :align: center
   
-  Sugerencia de número de agrupaciones o clústeres
+ Suggested number of groupings or clusters
   
-En el siguiente ejemplo se muestra el gráfico del codo.
+The following example shows the elbow plot.
 
 .. figure:: images/codo.png
   :width: 400
-  :alt: Ejemplo de gráfico de codo generado
+  :alt: Example of generated elbow plot
   :align: center
   
-  Ejemplo de gráfico de codo
+  Example of an Elbow plot
 
-Una vez ejecutado el algoritmo, y configuradas todas las opciones previas, pulsando en el botón *Ejecutar*, se realizará el clustering, visualizando la proyección 2D la nube de puntos en la subpestaña *Gráfico 2D*. Se indica en la leyenda el color asignado al clúster, el número de clúster y el número de instancias del total asignadas a dicho cluster. Adicionalmente en el gráfico se colorean en negro los centroides de cada clúster.
+Once the algorithm has been executed, and all the previous options have been configured, clicking the *Run* button will perform the clustering, visualizing the 2D point cloud projection in the 2D Graph sub-tab. The color assigned to the cluster are indicated in the legend together with the cluster number and the number of instances assigned to that cluster. Additionally, the centroids of each cluster are colored in black in the graph.
 
-A la derecha del gráfico generado, se muestran las instancias clasificadas, mostrando su foto, apellidos, nombre y número de clúster asignado. Si seleccionamos el desplegable *Agrupaciones* en la parte superior, podemos seleccionar y filtrar solo los clústeres concretos que queremos mostrar.
+On the right side of the generated graph, the classified instances are displayed, showing their photo, last name, first name, and assigned cluster number. If you select the *Clusters* dropdown at the top, you can select and filter only the specific clusters you want to display.
+
 
 .. figure:: images/clustering_2d.png
   :width: 600
-  :alt: Clustering 2D
+  :alt: 2D Clustering
   :align: center
   
-  Clustering 2D
+  2D Clustering
 
-También se puede visualizar el resultado en una representación 3D del clustering previamente obtenido, en la subpestaña *Gráfico 3D*.
+You can also view the result in a 3D representation of the previously obtained clustering in the *3D graph* sub-tab.
 
 .. figure:: images/clustering_3d.png
   :width: 600
-  :alt: Clustering 3D
+  :alt: 3D Clustering
   :align: center
   
-  Clustering 3D
+  3D Clustering
 
-Para comprobar la corrección del clustering ejecutado, se muestran los indicadores en la subpestaña *Análisis de silueta*. En dicho gráfico, para cada instancia, se representa en una escala [-1,1] la adecuación del clúster asignado a cada instancia. Un valor 1 es un valor máximo ideal. Mientras que en la práctica ese valor oscilará entre [0,1] indicando que la instancia está peor o mejor asignada a ese clúster, y valores negativos indican que la instancia está definitivamente en un clúster equivocado.
+To check the correctness of the executed clustering, indicators are displayed in the *Silhouette analysis* sub-tab. In this graph, the suitability of the assigned cluster to each instance is represented on a scale of [-1,1]. A value of 1 is an ideal maximum value. In practice, this value will fluctuate between [0,1], indicating whether the instance is poorly or well assigned to that cluster. Negative values indicate that the instance is definitely in the wrong cluster.
 
 .. figure:: images/analisis_de_silueta.png
   :width: 600
-  :alt: Analisis de silueta
+  :alt: Silhouette analysis
   :align: center
   
-  Análisis de silueta
+  Silhouette analysis
 
-Una vez obtenida una agrupación adecuada, mediante la exploración de las opciones previas, se pueden renombrar las etiquetas numéricas asignadas. Estas nuevas etiquetas de texto se actualizan dinámicamente en las gráficas generadas. Esto es importante, si se quieren exportar los datos, asignando clústeres con algo más de significado que los números iniciales. Una vez que hayamos concluido el etiquetado, presionando en el botón *Exportar CSV*, generamos un fichero con los datos del clustering para su análisis posterior con otras herramientas.
+Once an appropriate clustering is obtained through the exploratory configuration of the previous options, you can rename the assigned numeric labels. These new text labels are updated dynamically in the generated graphs. This is important if you want to export the data, assigning clusters with more meaningful names than the initial numbers. Once you have finished labeling, by clicking the *Export CSV*button, you can generate a file with the clustering data for further post-analysis with other tools.
 
 .. figure:: images/etiquetado.png
   :width: 400
-  :alt: Ejemplo de etiquetado de clustering
+  :alt: Example of Cluster Labeling
   :align: center
   
-  Ejemplo de etiquetado de clústeres
+  Example of Cluster Labeling
 
-A medida que vayamos añadiendo etiquetas, se nos permite una gestión limitada de las mismas, en la subpestaña *Gestionar etiquetas*.
+As you add labels, you are allowed limited management of them in the *Manage labels* sub-tab.
 
 .. figure:: images/gestion_etiquetas.png
   :width: 400
-  :alt: Gestión de etiquetas
+  :alt: Label Management
   :align: center
   
-  Gestión de etiquetas
+  Label Management
   
-Finalmente, si además hemos seleccionado elementos de calificación en la vista del calificador, se añadirán columnas adicionales a la derecha de la vista de resultados, mostrando las calificaciones en escala [0,100] (coloreando en rojo, amarillo, verde o morado de peores a mejores calificaciones), ayudando a identificar y sugerir el etiquetado de las instancias. Si marcamos la casilla *Exportar calificaciones* se añadirán esos datos en la exportación CSV.
+Finally, if we have also selected grading elements in the grader's view, additional columns will be added to the right of the results view, displaying grades on a scale of [0,100] (color-coding in red, yellow, green, or purple from worst to best grades), helping to identify and suggest labeling for the instances. If we check the *Export grades* box, this data will be appended to the CSV export.
   
 .. figure:: images/particional_con_calificaciones.png
   :width: 600
-  :alt: Particional con calificaciones
+  :alt: Partitioning with Grades
   :align: center
   
-  Resultado del clustering particional con datos de calificaciones 
+  Result of partitional clustering with grading data 
 
-Jerárquico
-----------
+Hierarchical
+------------
 
-El `agrupamiento jerárquico <https://en.wikipedia.org/wiki/Hierarchical_clustering>`_ utiliza un enfoque aglomerativo *bottom-up*. Cada instancia empieza en su propia agrupación, y empareja agrupaciones moviéndolas hacia arriba en la jerarquía. 
+`Hierarchical clustering <https://en.wikipedia.org/wiki/Hierarchical_clustering>`_ uses a *bottom-up* approach. Each instance starts in its own cluster and pairs clusters by moving them up the hierarchy. 
 
 .. figure:: images/jerarquico.png
   :width: 600
-  :alt: Ventana de clustering jerárquico
+  :alt: Hierarchical Clustering Window
   :align: center
   
-  Ventana de clustering jerárquico
+  Hierarchical Clustering Window
   
-Para realizar dichas agrupaciones utiliza dos parámetros ajustables:
+To perform these clusters, it uses two configurable parameters:
 
-* Medida de distancia
+* Distance Measure
 	
-	* Euclidiana
+	* Euclidean
 	* Mahattan
 	* Chebyshov
 	
-* Distancia entre agrupaciones
+* Cluster Linkage (distance between clusters)
 	
-	* Conexión completa
-	* Conexión simple
-	* Conexión media
-	* Conexión entre centroides
-	* Conexión Ward
+	* Complete likage
+	* Single Linkagee
+	* Average Linkage
+	* Centroid linkage
+	* Ward's linkage
 	
-Para una descripción más detallada de dichas opciones consultar la documentacion en línea de su implementación en la `biblioteca SMILE <http://haifengl.github.io/api/java/smile/clustering/HierarchicalClustering.html>`_.
+For a more detailed description of these options, refer to the online documentation of its implementation in the `SMILE library <http://haifengl.github.io/api/java/smile/clustering/HierarchicalClustering.html>`_.
 
-Al igual que en el clúster particional, es **muy importante indicar qué datos se quieren utilizar**. Es obligatorio marcar al menos una de las opciones.
+Just like in the partitioning cluster, it is **very important to specify which data you want to use**. It is mandatory to select at least one of the options.
 
-* **Registros**. Dentro de registros se puede indicar además el tipo de datos a utilizar.
+* **Logs**. Within logs, you can also specify the data type to be used.
 
-	* Componentes
-	* Eventos
-	* Sección
-	* Módulos curso
+	* Components
+	* Events
+	* Section
+	* Course Modules
 	
-* **Calificaciones**
-* **Finalización de actividad**
+* **Grades**
+* **Activity Completion**
 
-**Si no se ha seleccionado ningún tipo de datos** se informa con un **mensaje de error**. Es muy importante y necesario confirmar el tipo de datos concreto sobre el que se realizará el clustering.
+**If no data type has been selected  an error message is displayed**. It is crucial to confirm the specific data on which clustering will be performed.
 
-Como últimos valores a ajustar, están las fechas de inicio y fin para el filtrado de datos, permitiendo realizar el clustering sobre una vista temporal concreta de los mismos.
+The last set of parameters to configure includes the start and end dates for data filtering, enabling you to perform clustering on a specific time window within the data.
 
-Configurados todos los parámetros y seleccionados los datos, se presionará el botón *Ejecutar* para realizar el clustering. En este proceso solo genera la representacion visual en árbol, denominada dendrograma.
+Once all parameters are configured and data is selected, press the *Run* button to perform the clustering. In this process, it only generates a visual tree representation called a dendrogram. 
 
 .. figure:: images/jerarquico_sin_particionar.png
   :width: 600
-  :alt: Dendrograma de la ejecución del clustering jerárquico
+  :alt: Dendrogram of the Hierarchical Clustering Execution
   :align: center
   
-  Dendrograma de la ejecución del clustering jerárquico
+  Dendrogram of the Hierarchical Clustering Execution
   
-Si queremos generar un clustering concreto, debemos seleccionar ahora el número de agrupaciones y presionar el botón *Ejecutar* debajo de dicho número de clustering. Esto genera una división sobre el dendrograma, particionando las instancias en el número de clústeres indicado. Se visualizará en la parte de la derecha las instancias ya agrupadas, con las mismas opciones que en el clúster particional.
+If you want to generate a specific clustering, you must now select the number of clusters and press the *Run* button below that number of clusters. This creates a division on the dendrogram, partitioning the instances into the indicated number of clusters. The instances already grouped are displayed on the right, with the same options as in the partitioning cluster.
 
 .. figure:: images/jerarquico_ejecutado.png
   :width: 600
-  :alt: Particionado sobre el dendrograma
+  :alt: Dendrogram partitioning
   :align: center
   
-  Particionado sobre el dendrograma
+  Dendrogram partitioning

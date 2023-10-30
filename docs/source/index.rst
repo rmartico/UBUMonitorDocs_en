@@ -22,6 +22,7 @@ User manual for UBUMonitor
    visualization/logs
    visualization/grades  
    visualization/activities
+   clustering
    configuration
    errormessages
    appendix

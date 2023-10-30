@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Error Messages &mdash; UBUMonitor 2.6.3 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Appendix. File structure" href="appendix.html" />
+    <link rel="prev" title="Application settings" href="configuration.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            UBUMonitor
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction and requirements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#installation-requirements">Installation requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#requirements-in-moodle">Requirements in Moodle</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation and start-up</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="install.html#portable-version-for-gnu-linux">Portable version for GNU/Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.html#portable-version-for-windows">Portable version for Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.html#executable-version-with-java-8">Executable version with Java 8</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="login.html">Login</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="login.html#online-mode">Online mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="login.html#offline-mode">Offline mode</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="courseselection.html">Course/subject selection</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="courseselection.html#updating-data">Updating data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="courseselection.html#cache-cleaning">Cache cleaning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="courseselection.html#offline-mode">Offline mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="courseselection.html#password-changed">Password changed</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="visualization/index.html">Main screen</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="visualization/index.html#menu-bar">Menu bar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/index.html#list-of-registered-users">List of registered users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/index.html#student-s-card">Student's card</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="visualization/logs.html">Log visualization</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#log-options">Log options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#components">Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#events">Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#sections">Sections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#course-module">Course module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#stacked-bar-chart">Stacked bar chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#heatmap-chart">HeatMap chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#cumulative-chart">Cumulative chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#rel-cumulative-chart">Rel. Cumulative chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#scatter-chart">Scatter chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#total-chart">Total chart</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="visualization/grades.html">Grade visualization</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="visualization/grades.html#line-chart">Line chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/grades.html#radar-chart">Radar chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/grades.html#boxplot-chart">Boxplot chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/grades.html#violin-chart">Violin chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/grades.html#grade-table">Grade table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/grades.html#percentage-chart">Percentage chart</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="visualization/activities.html">Activity completion visualization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Application settings</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#general">General</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#stacked-bars">Stacked bars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#heatmap">Heatmap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#total">Total</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#cumulative">Cumulative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#rel-cumulatives">Rel. Cumulatives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#boxplot">Boxplot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#violin">Violin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#grades">Grades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#id1">Grades %</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#activity-completion">Activity Completion</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Error Messages</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#message-on-window">Message on window</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#error-dialog">Error dialog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#usual-errors">Usual errors</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="appendix.html">Appendix. File structure</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="appendix.html#initial-content">Initial Content</a></li>
+<li class="toctree-l2"><a class="reference internal" href="appendix.html#file-and-directory-structure">File and directory structure</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: white" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">UBUMonitor</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Error Messages</li>
+
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
+        <a href="configuration.html" class="btn btn-neutral float-left" title="Application settings" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="appendix.html" class="btn btn-neutral float-right" title="Appendix. File structure" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="error-messages">
+<span id="errormessages"></span><h1>Error Messages<a class="headerlink" href="#error-messages" title="Permalink to this headline"></a></h1>
+<p>The application will display the various error messages, with two basic display formats: window embedded message or modal error dialog.</p>
+<section id="message-on-window">
+<h2>Message on window<a class="headerlink" href="#message-on-window" title="Permalink to this headline"></a></h2>
+<p>They are displayed in red at the bottom of the active window. They are caused by incorrect data entry. The figure shows the error when logging in with an incorrect user and/or password.</p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="_images/error_validacion.png"><img alt="User and/or password error" src="_images/error_validacion.png" style="width: 300px;" /></a>
+<figcaption>
+<p><span class="caption-text">User validation error</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>Another example, in the following figure, shows the corresponding message if there is no network connection, informing that the connection to the indicated host is not possible.</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="_images/error_sin_red.png"><img alt="Network error connection" src="_images/error_sin_red.png" style="width: 200px;" /></a>
+<figcaption>
+<p><span class="caption-text">Login network error connection</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="error-dialog">
+<h2>Error dialog<a class="headerlink" href="#error-dialog" title="Permalink to this headline"></a></h2>
+<p>A modal dialog is opened with a text describing the error and the option to display <strong>Show details</strong>. In the following figure we see an example of an error when losing the network connection when loading a course.</p>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="_images/error_sin_red_cargando_asignatura.png"><img alt="Network connection error loading course/subject" src="_images/error_sin_red_cargando_asignatura.png" style="width: 300px;" /></a>
+<figcaption>
+<p><span class="caption-text">Network connection error loading course/subject</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>If we select the option <strong>Show details</strong>, a text box opens at the bottom of the dialog, with the trace of the error.</p>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="_images/error_sin_red_cargando_asignatura_desplegada.png"><img alt="Details of the error in connection with the loading of the course" src="_images/error_sin_red_cargando_asignatura_desplegada.png" style="width: 300px;" /></a>
+<figcaption>
+<p><span class="caption-text">Details of the error in connection with the loading of the course</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>The information shown in the text box is technical, and although it is not of interest to the user, it is <strong>Very IMPORTANT</strong> to forward that text to the developers for the correction of errors or bugs in the application (you can select and copy the text directly).</p>
+</section>
+<section id="usual-errors">
+<h2>Usual errors<a class="headerlink" href="#usual-errors" title="Permalink to this headline"></a></h2>
+<p><strong>Without teacher's role</strong></p>
+<p>A common mistake is not having teacher (or non-editor) permissions for a course or community in which you are enrolled. In such cases a message like the following will be displayed:</p>
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="_images/error_sin_permisos_lectura.png"><img alt="Error when loading a subject without a teacher's role" src="_images/error_sin_permisos_lectura.png" style="width: 300px;" /></a>
+<figcaption>
+<p><span class="caption-text">Error when loading a subject without a teacher's role</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p><strong>Incompatible cache version</strong></p>
+<p>If we try to load a cache assignment, whose data file was generated with a different version of UBUMonitor, an error may occur as it is incompatible with the current version. In such cases, the cache must be cleared (<strong>Clear</strong> button) and the data downloaded again.</p>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="_images/error_version_cache.png"><img alt="Error when loading a subject from the cache with an incompatible version" src="_images/error_version_cache.png" style="width: 300px;" /></a>
+<figcaption>
+<p><span class="caption-text">Error when loading a subject from the cache with an incompatible version</span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="configuration.html" class="btn btn-neutral float-left" title="Application settings" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="appendix.html" class="btn btn-neutral float-right" title="Appendix. File structure" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020, Yi Peng Ji &amp; Raúl Marticorena.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

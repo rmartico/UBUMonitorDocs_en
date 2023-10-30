@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clustering &mdash; UBUMonitor 2.6.3 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Application settings" href="../configuration.html" />
+    <link rel="prev" title="Activity completion visualization" href="../visualization/activities.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            UBUMonitor
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction and requirements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../introduction.html#installation-requirements">Installation requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introduction.html#requirements-in-moodle">Requirements in Moodle</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation and start-up</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../install.html#portable-version-for-gnu-linux">Portable version for GNU/Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../install.html#portable-version-for-windows">Portable version for Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../install.html#executable-version-with-java-8">Executable version with Java 8</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../login.html">Login</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../login.html#online-mode">Online mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../login.html#offline-mode">Offline mode</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../courseselection.html">Course/subject selection</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../courseselection.html#updating-data">Updating data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../courseselection.html#cache-cleaning">Cache cleaning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../courseselection.html#offline-mode">Offline mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../courseselection.html#password-changed">Password changed</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../visualization/index.html">Main screen</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../visualization/index.html#menu-bar">Menu bar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../visualization/index.html#list-of-registered-users">List of registered users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../visualization/index.html#student-s-card">Student's card</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../visualization/logs.html">Log visualization</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../visualization/logs.html#log-options">Log options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../visualization/logs.html#components">Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../visualization/logs.html#events">Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../visualization/logs.html#sections">Sections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../visualization/logs.html#course-module">Course module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../visualization/logs.html#stacked-bar-chart">Stacked bar chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../visualization/logs.html#heatmap-chart">HeatMap chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../visualization/logs.html#cumulative-chart">Cumulative chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../visualization/logs.html#rel-cumulative-chart">Rel. Cumulative chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../visualization/logs.html#scatter-chart">Scatter chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../visualization/logs.html#total-chart">Total chart</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../visualization/grades.html">Grade visualization</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../visualization/grades.html#line-chart">Line chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../visualization/grades.html#radar-chart">Radar chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../visualization/grades.html#boxplot-chart">Boxplot chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../visualization/grades.html#violin-chart">Violin chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../visualization/grades.html#grade-table">Grade table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../visualization/grades.html#percentage-chart">Percentage chart</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../visualization/activities.html">Activity completion visualization</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Clustering</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#partitional">Partitional</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hierarchical">Hierarchical</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../configuration.html">Application settings</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../configuration.html#general">General</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuration.html#stacked-bars">Stacked bars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuration.html#heatmap">Heatmap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuration.html#total">Total</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuration.html#cumulative">Cumulative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuration.html#rel-cumulatives">Rel. Cumulatives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuration.html#boxplot">Boxplot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuration.html#violin">Violin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuration.html#grades">Grades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuration.html#id1">Grades %</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuration.html#activity-completion">Activity Completion</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../errormessages.html">Error Messages</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../errormessages.html#message-on-window">Message on window</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../errormessages.html#error-dialog">Error dialog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../errormessages.html#usual-errors">Usual errors</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix.html">Appendix. File structure</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../appendix.html#initial-content">Initial Content</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../appendix.html#file-and-directory-structure">File and directory structure</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: white" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">UBUMonitor</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Clustering</li>
+
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
+        <a href="../visualization/activities.html" class="btn btn-neutral float-left" title="Activity completion visualization" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../configuration.html" class="btn btn-neutral float-right" title="Application settings" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="clustering">
+<h1>Clustering<a class="headerlink" href="#clustering" title="Permalink to this headline"></a></h1>
+<p>UBUMonitor includes the feature to apply <em>clustering</em> or unsupervised grouping of students (and teachers), based on data collected from logs, grades and activity completion.</p>
+<p>Given the complexity of this section and the concepts used, its use is recommended for advanced users with some backgorund in the field. It is also recommended to review the concept of <a class="reference external" href="https://en.wikipedia.org/wiki/Cluster_analysis">clustering</a> before using this tab.</p>
+<p>As with the other tabs, operation is conditional on the prior selection of users, records (in its four variants of component, event, section or module), rating elements and activity completion.</p>
+<p>The main window of the clustering feature is shown below.</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="../_images/ventana_principal.png"><img alt="Clustering main window" src="../_images/ventana_principal.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Clustering main window</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>The different types of clustering included in this module, partitional and hierarchical, are described below.</p>
+<section id="partitional">
+<h2>Partitional<a class="headerlink" href="#partitional" title="Permalink to this headline"></a></h2>
+<p>The first type of clustering available is partitional clustering. Instances (students or teachers) are partitioned into clusters according to their selected data.</p>
+<p>In the top left corner you can select the specific clustering algorithm to be applied. Algorithms from two different libraries are included:</p>
+<ul>
+<li><p>Apache Math algorithms: documentation can be found online at <a class="reference external" href="https://commons.apache.org/proper/commons-math/userguide/ml.html">Machine Learning</a>. These are the algorithms included:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>KMeans++</p></li>
+<li><p>Fuzzy-KMeans</p></li>
+<li><p>DBSCAN</p></li>
+<li><p>Multi-KMeans</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>SMILE algorithms: documentation is available online at <a class="reference external" href="https://haifengl.github.io/">Smile - Statistical Machine Intelligence and Learning Engine</a>. These are the algorithms included:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>K-Means</p></li>
+<li><p>X-Means</p></li>
+<li><p>G-Means</p></li>
+<li><p>DBSCAN</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="../_images/algoritmos.png"><img alt="Partitional clustering algorithms." src="../_images/algoritmos.png" style="width: 200px;" /></a>
+<figcaption>
+<p><span class="caption-text">Partitional clustering algorithms.</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>Depending on the algorithm selected, different parameters to adjust are shown on the right. These parameters are different for each algorithm.</p>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="../_images/opciones_particional.png"><img alt="Opciones de configuración en clustering particional" src="../_images/opciones_particional.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Configuration options for partitional clustering</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>Once the algorithm has been selected and its particular parameters have been set, it is <strong>very important to indicate which data you want to use</strong>. It is mandatory to tick at least one of the posible options.</p>
+<ul>
+<li><p><strong>Logs</strong>. Within logs you can also indicate the following:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Components</p></li>
+<li><p>Events</p></li>
+<li><p>Section</p></li>
+<li><p>Course models</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>Grades</strong></p></li>
+<li><p><strong>Activity completion</strong></p></li>
+</ul>
+<p><strong>If no data type has been selected</strong> an <strong>error message</strong> is displayed. It is crucial to confirm the specific data type on which clustering will be performed.</p>
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="../_images/seleccionar_datos.png"><img alt="Data selection" src="../_images/seleccionar_datos.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Data selection</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>If you want to exclude from the analysis those features with constant values for all instances, you will select the <em>Filter data</em> option (it is selected by default). If you also want to reduce the dimensionality of the input set, you will activate the &quot;Reduce dimensionality&quot; option, indicating the number of features to reduce (PCA is applied to reduce the dimension of the input set, although it reduces execution times, it may result in a loss of clustering quality).</p>
+<p>Since many algorithms have a random character in their initialization, yo can indicate the number of iterations to be performed. The algorithm will be therefore run the specified number of times, keeping the best result (based on its silhouette analysis).</p>
+<p>The last values to be set defines a specific time view to perform the clustering, by indicating the start and end dates for data filtering.</p>
+<p>Due to the fact that clustering is unsupervised, and the need of some algorithms to <strong>manually suggest the number of groupings or clusters</strong>, two methods of inferring the ideal value are provided.  However, they are still just suggested values.</p>
+<p>The elbow plot and the silhouette value analysis are provided. By choosing one of the two methods from the drop-down and pressing the <em>Analyze</em> button, the corresponding plot is generated for the maximum number of clusters chosen in the <em>slider</em>.</p>
+<figure class="align-default" id="id6">
+<img alt="clustering/images/sugerencia_agrupaciones.png:width:300:alt:Suggestednumberofclusters:align:center" src="clustering/images/sugerencia_agrupaciones.png:width:300:alt:Suggestednumberofclusters:align:center" />
+<figcaption>
+<p><span class="caption-text">Suggested number of groupings or clusters</span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>The following example shows the elbow plot.</p>
+<figure class="align-center" id="id7">
+<a class="reference internal image-reference" href="../_images/codo.png"><img alt="Example of generated elbow plot" src="../_images/codo.png" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-text">Example of an Elbow plot</span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>Once the algorithm has been executed, and all the previous options have been configured, clicking the <em>Run</em> button will perform the clustering, visualizing the 2D point cloud projection in the 2D Graph sub-tab. The color assigned to the cluster are indicated in the legend together with the cluster number and the number of instances assigned to that cluster. Additionally, the centroids of each cluster are colored in black in the graph.</p>
+<p>On the right side of the generated graph, the classified instances are displayed, showing their photo, last name, first name, and assigned cluster number. If you select the <em>Clusters</em> dropdown at the top, you can select and filter only the specific clusters you want to display.</p>
+<figure class="align-center" id="id8">
+<a class="reference internal image-reference" href="../_images/clustering_2d.png"><img alt="2D Clustering" src="../_images/clustering_2d.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">2D Clustering</span><a class="headerlink" href="#id8" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>You can also view the result in a 3D representation of the previously obtained clustering in the <em>3D graph</em> sub-tab.</p>
+<figure class="align-center" id="id9">
+<a class="reference internal image-reference" href="../_images/clustering_3d.png"><img alt="3D Clustering" src="../_images/clustering_3d.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">3D Clustering</span><a class="headerlink" href="#id9" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>To check the correctness of the executed clustering, indicators are displayed in the <em>Silhouette analysis</em> sub-tab. In this graph, the suitability of the assigned cluster to each instance is represented on a scale of [-1,1]. A value of 1 is an ideal maximum value. In practice, this value will fluctuate between [0,1], indicating whether the instance is poorly or well assigned to that cluster. Negative values indicate that the instance is definitely in the wrong cluster.</p>
+<figure class="align-center" id="id10">
+<a class="reference internal image-reference" href="../_images/analisis_de_silueta.png"><img alt="Silhouette analysis" src="../_images/analisis_de_silueta.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Silhouette analysis</span><a class="headerlink" href="#id10" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>Once an appropriate clustering is obtained through the exploratory configuration of the previous options, you can rename the assigned numeric labels. These new text labels are updated dynamically in the generated graphs. This is important if you want to export the data, assigning clusters with more meaningful names than the initial numbers. Once you have finished labeling, by clicking the <em>Export CSV</em> button, you can generate a file with the clustering data for further post-analysis with other tools.</p>
+<figure class="align-center" id="id11">
+<a class="reference internal image-reference" href="../_images/etiquetado.png"><img alt="Example of Cluster Labeling" src="../_images/etiquetado.png" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-text">Example of Cluster Labeling</span><a class="headerlink" href="#id11" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>As you add labels, you are allowed limited management of them in the <em>Manage labels</em> sub-tab.</p>
+<figure class="align-center" id="id12">
+<a class="reference internal image-reference" href="../_images/gestion_etiquetas.png"><img alt="Label Management" src="../_images/gestion_etiquetas.png" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-text">Label Management</span><a class="headerlink" href="#id12" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>Finally, if we have also selected grading elements in the grader's view, additional columns will be added to the right of the results view, displaying grades on a scale of [0,100] (color-coding in red, yellow, green, or purple from worst to best grades), helping to identify and suggest labeling for the instances. If we check the <em>Export grades</em> box, this data will be appended to the CSV export.</p>
+<figure class="align-center" id="id13">
+<a class="reference internal image-reference" href="../_images/particional_con_calificaciones.png"><img alt="Partitioning with Grades" src="../_images/particional_con_calificaciones.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Result of partitional clustering with grading data</span><a class="headerlink" href="#id13" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="hierarchical">
+<h2>Hierarchical<a class="headerlink" href="#hierarchical" title="Permalink to this headline"></a></h2>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Hierarchical_clustering">Hierarchical clustering</a> uses a <em>bottom-up</em> approach. Each instance starts in its own cluster and pairs clusters by moving them up the hierarchy.</p>
+<figure class="align-center" id="id14">
+<a class="reference internal image-reference" href="../_images/jerarquico.png"><img alt="Hierarchical Clustering Window" src="../_images/jerarquico.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Hierarchical Clustering Window</span><a class="headerlink" href="#id14" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>To perform these clusters, it uses two configurable parameters:</p>
+<ul>
+<li><p>Distance Measure</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Euclidean</p></li>
+<li><p>Mahattan</p></li>
+<li><p>Chebyshov</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Cluster Linkage (distance between clusters)</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Complete likage</p></li>
+<li><p>Single Linkagee</p></li>
+<li><p>Average Linkage</p></li>
+<li><p>Centroid linkage</p></li>
+<li><p>Ward's linkage</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p>For a more detailed description of these options, refer to the online documentation of its implementation in the <a class="reference external" href="http://haifengl.github.io/api/java/smile/clustering/HierarchicalClustering.html">SMILE library</a>.</p>
+<p>Just like in the partitioning cluster, it is <strong>very important to specify which data you want to use</strong>. It is mandatory to select at least one of the options.</p>
+<ul>
+<li><p><strong>Logs</strong>. Within logs, you can also specify the data type to be used.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Components</p></li>
+<li><p>Events</p></li>
+<li><p>Section</p></li>
+<li><p>Course Modules</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>Grades</strong></p></li>
+<li><p><strong>Activity Completion</strong></p></li>
+</ul>
+<p><strong>If no data type has been selected  an error message is displayed</strong>. It is crucial to confirm the specific data on which clustering will be performed.</p>
+<p>The last set of parameters to configure includes the start and end dates for data filtering, enabling you to perform clustering on a specific time window within the data.</p>
+<p>Once all parameters are configured and data is selected, press the <em>Run</em> button to perform the clustering. In this process, it only generates a visual tree representation called a dendrogram.</p>
+<figure class="align-center" id="id15">
+<a class="reference internal image-reference" href="../_images/jerarquico_sin_particionar.png"><img alt="Dendrogram of the Hierarchical Clustering Execution" src="../_images/jerarquico_sin_particionar.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Dendrogram of the Hierarchical Clustering Execution</span><a class="headerlink" href="#id15" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>If you want to generate a specific clustering, you must now select the number of clusters and press the <em>Run</em> button below that number of clusters. This creates a division on the dendrogram, partitioning the instances into the indicated number of clusters. The instances already grouped are displayed on the right, with the same options as in the partitioning cluster.</p>
+<figure class="align-center" id="id16">
+<a class="reference internal image-reference" href="../_images/jerarquico_ejecutado.png"><img alt="Dendrogram partitioning" src="../_images/jerarquico_ejecutado.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Dendrogram partitioning</span><a class="headerlink" href="#id16" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../visualization/activities.html" class="btn btn-neutral float-left" title="Activity completion visualization" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../configuration.html" class="btn btn-neutral float-right" title="Application settings" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020, Yi Peng Ji &amp; Raúl Marticorena.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

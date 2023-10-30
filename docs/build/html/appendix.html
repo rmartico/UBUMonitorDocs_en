@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Appendix. File structure &mdash; UBUMonitor 2.6.3 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Frequently Asked Questions" href="faq.html" />
+    <link rel="prev" title="Error Messages" href="errormessages.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            UBUMonitor
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction and requirements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#installation-requirements">Installation requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#requirements-in-moodle">Requirements in Moodle</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation and start-up</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="install.html#portable-version-for-gnu-linux">Portable version for GNU/Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.html#portable-version-for-windows">Portable version for Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.html#executable-version-with-java-8">Executable version with Java 8</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="login.html">Login</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="login.html#online-mode">Online mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="login.html#offline-mode">Offline mode</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="courseselection.html">Course/subject selection</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="courseselection.html#updating-data">Updating data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="courseselection.html#cache-cleaning">Cache cleaning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="courseselection.html#offline-mode">Offline mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="courseselection.html#password-changed">Password changed</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="visualization/index.html">Main screen</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="visualization/index.html#menu-bar">Menu bar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/index.html#list-of-registered-users">List of registered users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/index.html#student-s-card">Student's card</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="visualization/logs.html">Log visualization</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#log-options">Log options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#components">Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#events">Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#sections">Sections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#course-module">Course module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#stacked-bar-chart">Stacked bar chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#heatmap-chart">HeatMap chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#cumulative-chart">Cumulative chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#rel-cumulative-chart">Rel. Cumulative chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#scatter-chart">Scatter chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#total-chart">Total chart</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="visualization/grades.html">Grade visualization</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="visualization/grades.html#line-chart">Line chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/grades.html#radar-chart">Radar chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/grades.html#boxplot-chart">Boxplot chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/grades.html#violin-chart">Violin chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/grades.html#grade-table">Grade table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/grades.html#percentage-chart">Percentage chart</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="visualization/activities.html">Activity completion visualization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Application settings</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#general">General</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#stacked-bars">Stacked bars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#heatmap">Heatmap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#total">Total</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#cumulative">Cumulative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#rel-cumulatives">Rel. Cumulatives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#boxplot">Boxplot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#violin">Violin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#grades">Grades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#id1">Grades %</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#activity-completion">Activity Completion</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="errormessages.html">Error Messages</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="errormessages.html#message-on-window">Message on window</a></li>
+<li class="toctree-l2"><a class="reference internal" href="errormessages.html#error-dialog">Error dialog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="errormessages.html#usual-errors">Usual errors</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Appendix. File structure</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#initial-content">Initial Content</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#file-and-directory-structure">File and directory structure</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: white" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">UBUMonitor</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Appendix. File structure</li>
+
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
+        <a href="errormessages.html" class="btn btn-neutral float-left" title="Error Messages" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="faq.html" class="btn btn-neutral float-right" title="Frequently Asked Questions" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="appendix-file-structure">
+<h1>Appendix. File structure<a class="headerlink" href="#appendix-file-structure" title="Permalink to this headline"></a></h1>
+<p>Below is the typical file structure of UBUMonitor.</p>
+<section id="initial-content">
+<h2>Initial Content<a class="headerlink" href="#initial-content" title="Permalink to this headline"></a></h2>
+<p>If the portable version is installed, unzipping creates a directory:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">UBUMonitor.v2.6.3-stable-Win64-Portable</span></code> on Windows 64 bits.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">UBUMonitor.v2.6.3-stable-Win32-Portable</span></code> on 32-bit Windows.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">UBUMonitor.v2.6.3-stable-Linux64-Portable</span></code> on GNU/Linux 64-bit.</p></li>
+</ul>
+<p>In the directory created, we will have the following content in Windows (32-bit content is equivalent):</p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="_images/contenido_instalacion_portable_64bits.png"><img alt="Content in Windows S.O." src="_images/contenido_instalacion_portable_64bits.png" style="width: 350px;" /></a>
+<figcaption>
+<p><span class="caption-text">Content in a portable Windows installation (for 64-bit)</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>While in GNU/Linux we will have the following content:</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="_images/contenido_instalacion_portable_linux64bits.png"><img alt="Content in GNU/Linux S.O." src="_images/contenido_instalacion_portable_linux64bits.png" style="width: 350px;" /></a>
+<figcaption>
+<p><span class="caption-text">Content in a portable installation on GNU/Linux (for 64 bits)</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>If the Java executable version is installed with <code class="docutils literal notranslate"><span class="pre">.jar</span></code> we will have the following content:</p>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="_images/ejecutable_jar.png"><img alt="Executable jar." src="_images/ejecutable_jar.png" style="width: 300px;" /></a>
+<figcaption>
+<p><span class="caption-text">Content in the installation with Java .jar executable</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="file-and-directory-structure">
+<h2>File and directory structure<a class="headerlink" href="#file-and-directory-structure" title="Permalink to this headline"></a></h2>
+<p>After starting the application, downloading some courses and changing the default configuration, we will find the following directories and additional files (e.g. in Windows).</p>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="_images/estructura_ficheros.png"><img alt="File structure" src="_images/estructura_ficheros.png" style="width: 300px;" /></a>
+<figcaption>
+<p><span class="caption-text">File structure</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>The <code class="docutils literal notranslate"><span class="pre">config.properties</span></code> file stores user-customized startup options (e.g. <em>Remember user</em>, <em>Remember host</em>, etc.)</p>
+<p>On the other hand, the following directories are created:</p>
+<ul class="simple">
+<li><p><em>cache</em>: contains the local cache of the files with the data of the downloaded courses.</p></li>
+<li><p><em>configuration</em>: stores the application configuration for the host, user and particular subject.</p></li>
+<li><p><em>log</em>: directory where are generated the log files of the application. These files contain the execution and error logs that occur internally in the application. They are useful to forward them to the developers to correct possible errors or <em>bugs</em> that occur in the application.</p></li>
+</ul>
+<p>The <code class="docutils literal notranslate"><span class="pre">cache</span></code> directory is organized on a first level by <em>host</em> and on a second level by user. In this directory one file is stored for each downloaded subject (e.g. <em>Psychology in Cinema (Art and Media)-62</em>). The <code class="docutils literal notranslate"><span class="pre">configuration</span></code> directory is organized in the same way.</p>
+<p>This directory structure allows access to different Moodle servers from UBUMonitor, avoiding collisions in the case of matching user or course names.</p>
+<p><strong>VERY IMPORTANT</strong>: Portable versions include a directory with its own JRE distribution (e.g. <code class="docutils literal notranslate"><span class="pre">zulu8.42.0.23-ca-fx-jre8.0.232-win_x64</span></code>, <code class="docutils literal notranslate"><span class="pre">zulu8.44.0.13-ca-fx-jre8.0.242-linux_x64</span></code>, etc.) This directory <strong>must not be changed</strong>.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="errormessages.html" class="btn btn-neutral float-left" title="Error Messages" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="faq.html" class="btn btn-neutral float-right" title="Frequently Asked Questions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020, Yi Peng Ji &amp; Raúl Marticorena.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

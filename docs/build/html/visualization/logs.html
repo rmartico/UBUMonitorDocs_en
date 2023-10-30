@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Log visualization &mdash; UBUMonitor 2.6.3 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Grade visualization" href="grades.html" />
+    <link rel="prev" title="Main screen" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            UBUMonitor
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction and requirements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../introduction.html#installation-requirements">Installation requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introduction.html#requirements-in-moodle">Requirements in Moodle</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation and start-up</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../install.html#portable-version-for-gnu-linux">Portable version for GNU/Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../install.html#portable-version-for-windows">Portable version for Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../install.html#executable-version-with-java-8">Executable version with Java 8</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../login.html">Login</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../login.html#online-mode">Online mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../login.html#offline-mode">Offline mode</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../courseselection.html">Course/subject selection</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../courseselection.html#updating-data">Updating data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../courseselection.html#cache-cleaning">Cache cleaning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../courseselection.html#offline-mode">Offline mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../courseselection.html#password-changed">Password changed</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Main screen</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#menu-bar">Menu bar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#list-of-registered-users">List of registered users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#student-s-card">Student's card</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Log visualization</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#log-options">Log options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#components">Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#events">Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sections">Sections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#course-module">Course module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#stacked-bar-chart">Stacked bar chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#heatmap-chart">HeatMap chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cumulative-chart">Cumulative chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rel-cumulative-chart">Rel. Cumulative chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#scatter-chart">Scatter chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#total-chart">Total chart</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="grades.html">Grade visualization</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="grades.html#line-chart">Line chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="grades.html#radar-chart">Radar chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="grades.html#boxplot-chart">Boxplot chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="grades.html#violin-chart">Violin chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="grades.html#grade-table">Grade table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="grades.html#percentage-chart">Percentage chart</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="activities.html">Activity completion visualization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuration.html">Application settings</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../configuration.html#general">General</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuration.html#stacked-bars">Stacked bars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuration.html#heatmap">Heatmap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuration.html#total">Total</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuration.html#cumulative">Cumulative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuration.html#rel-cumulatives">Rel. Cumulatives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuration.html#boxplot">Boxplot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuration.html#violin">Violin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuration.html#grades">Grades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuration.html#id1">Grades %</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuration.html#activity-completion">Activity Completion</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../errormessages.html">Error Messages</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../errormessages.html#message-on-window">Message on window</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../errormessages.html#error-dialog">Error dialog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../errormessages.html#usual-errors">Usual errors</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix.html">Appendix. File structure</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../appendix.html#initial-content">Initial Content</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../appendix.html#file-and-directory-structure">File and directory structure</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: white" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">UBUMonitor</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Log visualization</li>
+
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
+        <a href="index.html" class="btn btn-neutral float-left" title="Main screen" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="grades.html" class="btn btn-neutral float-right" title="Grade visualization" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="log-visualization">
+<h1>Log visualization<a class="headerlink" href="#log-visualization" title="Permalink to this headline"></a></h1>
+<section id="log-options">
+<h2>Log options<a class="headerlink" href="#log-options" title="Permalink to this headline"></a></h2>
+<p>By clicking on the <strong>Logs</strong> tab, in the lower left corner, several filtering options appear at the bottom of the main screen.</p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="../_images/OpcionesRegistros.png"><img alt="Log filter" src="../_images/OpcionesRegistros.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Log filter</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<ul>
+<li><p><strong>Suggested full scale change</strong>: allows the full scale of the Y axis to be changed. The value is updated when changing the selected components and/or events or the other options. It also provides useful information when showing that there is a user with that scale.</p></li>
+<li><p><strong>Group by</strong>: groups the logs in different ways</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Hours</p></li>
+<li><p>Days</p></li>
+<li><p>Days of the week</p></li>
+<li><p>Weeks</p></li>
+<li><p>Months</p></li>
+<li><p>All</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>Start reference date</strong>: the reference start date shown when grouping. It initially takes the value of the subject configuration in Moodle.</p></li>
+<li><p><strong>End reference date</strong>: the reference end date shown when grouping. Initially it takes as end date the minimum of the current date and the end date of the course if it exists.</p></li>
+</ul>
+<p>Note that the start and end reference date are not taken into account when making groupings. For example, when grouping by months and an initial date of 06/17/2019 to 06/24/2019, it will not show the logs between those two days, but will show all those of June.</p>
+<p>In the groupings by <strong>Hours</strong> and <strong>Days of the week</strong> they do not use the date selector, being calculated on the total of logs, therefore they are disabled.</p>
+<p>In the charts, when you click on the points or elements of a specific student, it is positioned in the view of the corresponding user, to facilitate their identification. The student's file is available to consult additional information.</p>
+<p>In the lower left area, the possible tabs for selecting elements on which to generate the charts are shown: <strong>Components</strong>, <strong>Events</strong>, <strong>Sections</strong> or <strong>Course Modules</strong>. Multiple selection is allowed on all of them and filtering by text.</p>
+</section>
+<section id="components">
+<h2>Components<a class="headerlink" href="#components" title="Permalink to this headline"></a></h2>
+<p>It lists the course logs according to the type of <strong>Component</strong>. Includes typical Moodle activities and resources, and additionally any generated by the particular activity on the course. Only components that have been generated by users enrolled in the current course are displayed.</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="../_images/ListaComponentes.png"><img alt="List of components" src="../_images/ListaComponentes.png" style="width: 300px;" /></a>
+<figcaption>
+<p><span class="caption-text">List of components</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="events">
+<h2>Events<a class="headerlink" href="#events" title="Permalink to this headline"></a></h2>
+<p>It lists the course logs according to the <strong>Component and Event</strong> that it is. Only components and events generated by current users enrolled in the course are displayed. It basically breaks down the types of events that occur on the components.</p>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="../_images/ListaEventos.png"><img alt="List of events" src="../_images/ListaEventos.png" style="width: 300px;" /></a>
+<figcaption>
+<p><span class="caption-text">List of events</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="sections">
+<h2>Sections<a class="headerlink" href="#sections" title="Permalink to this headline"></a></h2>
+<p>It shows the structure of sections in which the course is organized, in the same order as they are in the course. In practice, they usually correspond to topics or weeks. Initially only the visible sections are shown but by selecting <strong>With hidden</strong>, all are shown.</p>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="../_images/ListaSecciones.png"><img alt="List of sections" src="../_images/ListaSecciones.png" style="width: 300px;" /></a>
+<figcaption>
+<p><span class="caption-text">List of sections</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="course-module">
+<h2>Course module<a class="headerlink" href="#course-module" title="Permalink to this headline"></a></h2>
+<p>It shows the complete set of course modules, including all the resources and activities that have been created. They are displayed in the order in which they are found in the course. Initially only the visible modules are shown but by selecting <strong>With hidden</strong>, all are shown. It is also possible to filter only those modules that have active completion tracking, by checking the <strong>Act.Complet</strong> box. Filtering with multiple selection is allowed, according to the module type.</p>
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="../_images/ListaModulos.png"><img alt="List of modules" src="../_images/ListaModulos.png" style="width: 300px;" /></a>
+<figcaption>
+<p><span class="caption-text">List of modules</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="stacked-bar-chart">
+<h2>Stacked bar chart<a class="headerlink" href="#stacked-bar-chart" title="Permalink to this headline"></a></h2>
+<p>Displays in stacked bars the number of logs for each of the selected users. Different colors are used for each of the elements. The lines indicating the average value of the currently filtered users are also stacked.</p>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="../_images/GraficoBarrasApiladas.png"><img alt="Stacked bar chart" src="../_images/GraficoBarrasApiladas.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Stacked bar chart</span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>If the cursor is placed on a stacked bar, the identity of the student and the breakdown of values is displayed in a <em>tooltip</em>.</p>
+<p>Setting the maximum value to <strong>Change suggested maximum scale:</strong> recalculates and sets the maximum on the Y-axis.</p>
+</section>
+<section id="heatmap-chart">
+<h2>HeatMap chart<a class="headerlink" href="#heatmap-chart" title="Permalink to this headline"></a></h2>
+<p>Displays a heatmap for selected users The heatmap colours from red to green, from lower to higher intensity, in relation to the number of user accesses to the selected items and to the filter selection in the lower zone.</p>
+<figure class="align-center" id="id7">
+<a class="reference internal image-reference" href="../_images/GraficoHeatMap.png"><img alt="HeatMap chart" src="../_images/GraficoHeatMap.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">HeatMap chart</span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>If we click on the upper legend in a range, for example on the zero value, those values in that range are highlighted in the graph, making it easier, for example, to detect students at risk of dropping out or in other situations.</p>
+<figure class="align-center" id="id8">
+<a class="reference internal image-reference" href="../_images/GraficoHeatMapResaltandoValor.png"><img alt="HeatMap chart" src="../_images/GraficoHeatMapResaltandoValor.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">HeatMap chart highliting selected threshold</span><a class="headerlink" href="#id8" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>Setting the maximum value to <strong>Change suggested maximum scale:</strong> recalculates and adjusts the color palette.</p>
+</section>
+<section id="cumulative-chart">
+<h2>Cumulative chart<a class="headerlink" href="#cumulative-chart" title="Permalink to this headline"></a></h2>
+<p>Displays the accumulated value of the number of logs, over time. The average value is included for comparison with a dashed line. It allows to show the evolution along the course of the number of accesses by each student and to compare it with the rest.</p>
+<figure class="align-center" id="id9">
+<a class="reference internal image-reference" href="../_images/Acumulados.png"><img alt="Cumulative Chart" src="../_images/Acumulados.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Cumulative Chart</span><a class="headerlink" href="#id9" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="rel-cumulative-chart">
+<h2>Rel. Cumulative chart<a class="headerlink" href="#rel-cumulative-chart" title="Permalink to this headline"></a></h2>
+<p>Displays the cumulative value of the number of logs against the average value as a reference, over time. The measurement as a reference line always corresponds to the red dashed line at the zero point. It allows you to show the evolution relative to the average over the course of time.</p>
+<figure class="align-center" id="id10">
+<a class="reference internal image-reference" href="../_images/AcumuladosRelativos.png"><img alt="Rel. Cumulative Chart related to the mean value" src="../_images/AcumuladosRelativos.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Rel. Cumulative Chart related to the mean value</span><a class="headerlink" href="#id10" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="scatter-chart">
+<h2>Scatter chart<a class="headerlink" href="#scatter-chart" title="Permalink to this headline"></a></h2>
+<p>Displays the time distribution of logs over time for each selected user. It represents the temporal distribution of the different accesses at a glance, making it easier to compare them.</p>
+<figure class="align-center" id="id11">
+<a class="reference internal image-reference" href="../_images/Dispersion.png"><img alt="Scatter chart" src="../_images/Dispersion.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Scatter chart</span><a class="headerlink" href="#id11" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="total-chart">
+<h2>Total chart<a class="headerlink" href="#total-chart" title="Permalink to this headline"></a></h2>
+<p>Displays the total number of filtered user records in a time period for the selected items. It allows the comparison of accesses between elements in a direct way.</p>
+<figure class="align-center" id="id12">
+<a class="reference internal image-reference" href="../_images/Total.png"><img alt="Total chart" src="../_images/Total.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Total chart</span><a class="headerlink" href="#id12" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>If we select groups, their totals are shown, taking into account the filter by role. Additionally you can select users from the list of filters, to display the totals on that dummy group.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Main screen" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="grades.html" class="btn btn-neutral float-right" title="Grade visualization" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020, Yi Peng Ji &amp; Raúl Marticorena.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Introduction and requirements &mdash; UBUMonitor 2.6.3 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Installation and start-up" href="install.html" />
+    <link rel="prev" title="User manual for UBUMonitor" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            UBUMonitor
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction and requirements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#installation-requirements">Installation requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#requirements-in-moodle">Requirements in Moodle</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation and start-up</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="install.html#portable-version-for-gnu-linux">Portable version for GNU/Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.html#portable-version-for-windows">Portable version for Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.html#executable-version-with-java-8">Executable version with Java 8</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="login.html">Login</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="login.html#online-mode">Online mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="login.html#offline-mode">Offline mode</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="courseselection.html">Course/subject selection</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="courseselection.html#updating-data">Updating data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="courseselection.html#cache-cleaning">Cache cleaning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="courseselection.html#offline-mode">Offline mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="courseselection.html#password-changed">Password changed</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="visualization/index.html">Main screen</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="visualization/index.html#menu-bar">Menu bar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/index.html#list-of-registered-users">List of registered users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/index.html#student-s-card">Student's card</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="visualization/logs.html">Log visualization</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#log-options">Log options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#components">Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#events">Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#sections">Sections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#course-module">Course module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#stacked-bar-chart">Stacked bar chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#heatmap-chart">HeatMap chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#cumulative-chart">Cumulative chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#rel-cumulative-chart">Rel. Cumulative chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#scatter-chart">Scatter chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#total-chart">Total chart</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="visualization/grades.html">Grade visualization</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="visualization/grades.html#line-chart">Line chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/grades.html#radar-chart">Radar chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/grades.html#boxplot-chart">Boxplot chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/grades.html#violin-chart">Violin chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/grades.html#grade-table">Grade table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/grades.html#percentage-chart">Percentage chart</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="visualization/activities.html">Activity completion visualization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Application settings</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#general">General</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#stacked-bars">Stacked bars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#heatmap">Heatmap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#total">Total</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#cumulative">Cumulative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#rel-cumulatives">Rel. Cumulatives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#boxplot">Boxplot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#violin">Violin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#grades">Grades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#id1">Grades %</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#activity-completion">Activity Completion</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="errormessages.html">Error Messages</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="errormessages.html#message-on-window">Message on window</a></li>
+<li class="toctree-l2"><a class="reference internal" href="errormessages.html#error-dialog">Error dialog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="errormessages.html#usual-errors">Usual errors</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="appendix.html">Appendix. File structure</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="appendix.html#initial-content">Initial Content</a></li>
+<li class="toctree-l2"><a class="reference internal" href="appendix.html#file-and-directory-structure">File and directory structure</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: white" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">UBUMonitor</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Introduction and requirements</li>
+
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
+        <a href="index.html" class="btn btn-neutral float-left" title="User manual for UBUMonitor" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="install.html" class="btn btn-neutral float-right" title="Installation and start-up" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="introduction-and-requirements">
+<h1>Introduction and requirements<a class="headerlink" href="#introduction-and-requirements" title="Permalink to this headline"></a></h1>
+<p>UBUMonitor is a <em>desktop client application</em> that allows you to connect to a <em>Moodle server</em> to monitor the particular activity of the students. It allows to extract the data from the logs, gradebook and activity completion of our subjects, visualizing these data in a more friendly way for the teacher.</p>
+<section id="installation-requirements">
+<h2>Installation requirements<a class="headerlink" href="#installation-requirements" title="Permalink to this headline"></a></h2>
+<ul>
+<li><p>Windows, GNU/Linux or Mac operating system</p></li>
+<li><p>Have an Internet connection.</p></li>
+<li><p>Have a minimum of:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><em>250 MB free hard disk</em> for the portable version, which includes the Java Runtime Environment (JRE).</p></li>
+<li><p><em>26 MB free disk</em> if you already have Java 8 installed.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</section>
+<section id="requirements-in-moodle">
+<h2>Requirements in Moodle<a class="headerlink" href="#requirements-in-moodle" title="Permalink to this headline"></a></h2>
+<ul>
+<li><p>Required</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Have a <strong>teacher's account</strong> in the subjects or courses you want to access.</p></li>
+<li><p>Access Moodle with basic web validation through <cite>http://</cite> or <cite>https://</cite>. Currently <strong>NO</strong> support is included for <em>Single Sign-on</em> type systems.</p></li>
+<li><p>Have activated in the Moodle server the <strong>mobile support</strong> (mobile apps). In case of an error when <em>login</em> from UBUMonitor, ask the Moodle server administrator for possible activation.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Optional (for a better experience)</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Set correctly (in <strong>Edit settings</strong> of the course), in <strong>General</strong>, the <em>Course start date</em> and <em>Course end date</em> (enabled) in your subjects. Otherwise, the initial course selection (in the <em>In Progress</em>, <em>Future</em> and <em>Past</em> tabs) and the date filters for the log charts <strong>WILL NOT work correctly</strong>.</p></li>
+<li><p>Activate <strong>show percentage</strong> of the subject in the <strong>Moodle gradebook</strong>. Otherwise <strong>NO data can be loaded from the gradebook</strong>.</p></li>
+<li><p>Activate in <strong>Edit settings</strong> of the course, in the section <strong>Completion tracking</strong> the option <strong>Enable completion tracking</strong>. Once this change has been made, it is recommended that you adjust the <strong>Completion Tracking</strong> option for each activity and resource in <em>Activity Completion</em>, if you want to use the corresponding table.</p></li>
+<li><p>Have <strong>defined groups in the subject</strong> if you want to use the filters and particular charts on groups.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="User manual for UBUMonitor" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="install.html" class="btn btn-neutral float-right" title="Installation and start-up" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020, Yi Peng Ji &amp; Raúl Marticorena.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

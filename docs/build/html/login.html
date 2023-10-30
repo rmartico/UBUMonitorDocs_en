@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login &mdash; UBUMonitor 2.6.3 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Course/subject selection" href="courseselection.html" />
+    <link rel="prev" title="Installation and start-up" href="install.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            UBUMonitor
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction and requirements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#installation-requirements">Installation requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#requirements-in-moodle">Requirements in Moodle</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation and start-up</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="install.html#portable-version-for-gnu-linux">Portable version for GNU/Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.html#portable-version-for-windows">Portable version for Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.html#executable-version-with-java-8">Executable version with Java 8</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Login</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#online-mode">Online mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#offline-mode">Offline mode</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="courseselection.html">Course/subject selection</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="courseselection.html#updating-data">Updating data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="courseselection.html#cache-cleaning">Cache cleaning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="courseselection.html#offline-mode">Offline mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="courseselection.html#password-changed">Password changed</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="visualization/index.html">Main screen</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="visualization/index.html#menu-bar">Menu bar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/index.html#list-of-registered-users">List of registered users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/index.html#student-s-card">Student's card</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="visualization/logs.html">Log visualization</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#log-options">Log options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#components">Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#events">Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#sections">Sections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#course-module">Course module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#stacked-bar-chart">Stacked bar chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#heatmap-chart">HeatMap chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#cumulative-chart">Cumulative chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#rel-cumulative-chart">Rel. Cumulative chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#scatter-chart">Scatter chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#total-chart">Total chart</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="visualization/grades.html">Grade visualization</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="visualization/grades.html#line-chart">Line chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/grades.html#radar-chart">Radar chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/grades.html#boxplot-chart">Boxplot chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/grades.html#violin-chart">Violin chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/grades.html#grade-table">Grade table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/grades.html#percentage-chart">Percentage chart</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="visualization/activities.html">Activity completion visualization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Application settings</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#general">General</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#stacked-bars">Stacked bars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#heatmap">Heatmap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#total">Total</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#cumulative">Cumulative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#rel-cumulatives">Rel. Cumulatives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#boxplot">Boxplot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#violin">Violin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#grades">Grades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#id1">Grades %</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#activity-completion">Activity Completion</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="errormessages.html">Error Messages</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="errormessages.html#message-on-window">Message on window</a></li>
+<li class="toctree-l2"><a class="reference internal" href="errormessages.html#error-dialog">Error dialog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="errormessages.html#usual-errors">Usual errors</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="appendix.html">Appendix. File structure</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="appendix.html#initial-content">Initial Content</a></li>
+<li class="toctree-l2"><a class="reference internal" href="appendix.html#file-and-directory-structure">File and directory structure</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: white" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">UBUMonitor</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Login</li>
+
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
+        <a href="install.html" class="btn btn-neutral float-left" title="Installation and start-up" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="courseselection.html" class="btn btn-neutral float-right" title="Course/subject selection" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="login">
+<h1>Login<a class="headerlink" href="#login" title="Permalink to this headline"></a></h1>
+<p>Once the application is started, the login screen will be displayed. The window displays the current product version at the top and allows you to select the preferred language for the application.</p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="_images/Login.png"><img alt="Login" src="_images/Login.png" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-text">Login</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>Next, you must enter your <strong>User</strong> and <strong>Password</strong> credentials in Moodle.</p>
+<p><strong>VERY IMPORTANT:</strong> the application <strong>never</strong> persistently stores, nor forwards to other servers, the <em>password</em> of the user, for security reasons. The source code is available for audit and you can check which data and to which server it is sent, with a network analysis software or <em>sniffer</em> (e.g. Wireshark, Microsoft Message Analyzer, Tcpdump, etc.).</p>
+<section id="online-mode">
+<h2>Online mode<a class="headerlink" href="#online-mode" title="Permalink to this headline"></a></h2>
+<p>In the <strong>Host</strong> field you must indicate the URL of the website of the chosen Moodle platform. When entering the host, you must include its URL, including the access protocol.</p>
+<p>For example:</p>
+<ul class="simple">
+<li><p>to access the Mount Orange School test server you will literally put: <code class="docutils literal notranslate"><span class="pre">https://school.moodledemo.net</span></code></p></li>
+<li><p>to access the UBU's Moodle server (UBUVirtual) you will literally put: <code class="docutils literal notranslate"><span class="pre">https://ubuvirtual.ubu.es</span></code></p></li>
+</ul>
+<p>It is recommended that you always access secure servers (with <a class="reference external" href="https://">https://</a>) to ensure that the information you send is encrypted.</p>
+<p>However, UBUMonitor allows access to any Moodle server that validates users in the form of login/password. If the server accessed is NOT secure and does not encrypt the communication (with <code class="docutils literal notranslate"><span class="pre">http://</span></code> instead of <code class="docutils literal notranslate"><span class="pre">https://</span></code>), an icon and an additional <em>tooltip</em> are displayed to warn the user. It is recommended to use this option with caution and <strong>only for accesses to a trusted local server</strong>.</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="_images/Login_no_seguro.png"><img alt="Non-secure Login" src="_images/Login_no_seguro.png" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-text">Non-secure Login</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>The application <strong>remembers</strong> the <em>urls</em> of the servers that have been used <strong>previously</strong>, suggesting in a predictive way those <em>urls</em>.</p>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="_images/Sugerencia_urls_previas.png"><img alt="Suggested previously used hosts" src="_images/Sugerencia_urls_previas.png" style="width: 300px;" /></a>
+<figcaption>
+<p><span class="caption-text">Suggested previously used hosts</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>For convenience, the option is given to <strong>Remember user</strong> and <strong>Remember host</strong>, avoiding having to fill in the fields again in subsequent accesses. This information is saved in a <code class="docutils literal notranslate"><span class="pre">config.properties</span></code> file in the current directory, if we check one or both options. The <strong>Clear</strong> button allows you to remove the text from the three fields.</p>
+<p>After entering the credentials we press the button <strong>Enter</strong>. If the data is valid, it will load the following screen, and if not, it will show an error message in the lower area of the window.</p>
+<p>In case of unexpected error, it is recommended to check in this order:</p>
+<ol class="arabic simple">
+<li><p>That the network connection is <strong>active</strong>.</p></li>
+<li><p>That the <em>login/password/host</em> has been typed in <strong>correctly</strong> (check that <strong>NO</strong> has capital lock enabled).</p></li>
+<li><p>That the current server is <strong>active</strong>, accessing directly with a browser.</p></li>
+<li><p>That your Moodle server has active <strong>web services</strong>. To check this, try using the official mobile application (see <a class="reference external" href="https://docs.moodle.org/all/es/Moodle_app">https://docs.moodle.org/all/es/Moodle_app</a>). If this application doesn't work either, your server <strong>NO</strong> allows such access. Contact your Moodle server administrator, to check the possible activation of <strong>web services</strong>. If you are working with a local installation, activate the web services by following the instructions in <a class="reference external" href="https://docs.moodle.org/38/en/Using_web_services">https://docs.moodle.org/38/en/Using_web_services</a>.</p></li>
+</ol>
+<p>If the problems persist, after checking the above, contact the authors of the application to report the error.</p>
+</section>
+<section id="offline-mode">
+<h2>Offline mode<a class="headerlink" href="#offline-mode" title="Permalink to this headline"></a></h2>
+<p>Additionally, if the box <strong>Offline mode</strong> is selected, the application can work <strong>without a network connection</strong>.</p>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="_images/Login_modo_offline_seleccionado.png"><img alt="Offline mode selected" src="_images/Login_modo_offline_seleccionado.png" style="width: 100px;" /></a>
+<figcaption>
+<p><span class="caption-text">Offline mode selected</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>This allows you to work even with the Moodle server unavailable or down. The only requirement is that <strong>previously</strong> the course data has been downloaded to the local cache, in previous working sessions with <strong>network connection</strong>.</p>
+<p>Even so, it is still necessary to enter the user, password and url of the <em>host</em>, since the data is located and decrypted from these values guaranteeing always a secure access to the local data.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="install.html" class="btn btn-neutral float-left" title="Installation and start-up" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="courseselection.html" class="btn btn-neutral float-right" title="Course/subject selection" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020, Yi Peng Ji &amp; Raúl Marticorena.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Application settings &mdash; UBUMonitor 2.6.3 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Error Messages" href="errormessages.html" />
+    <link rel="prev" title="Activity completion visualization" href="visualization/activities.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            UBUMonitor
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction and requirements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#installation-requirements">Installation requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#requirements-in-moodle">Requirements in Moodle</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation and start-up</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="install.html#portable-version-for-gnu-linux">Portable version for GNU/Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.html#portable-version-for-windows">Portable version for Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.html#executable-version-with-java-8">Executable version with Java 8</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="login.html">Login</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="login.html#online-mode">Online mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="login.html#offline-mode">Offline mode</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="courseselection.html">Course/subject selection</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="courseselection.html#updating-data">Updating data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="courseselection.html#cache-cleaning">Cache cleaning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="courseselection.html#offline-mode">Offline mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="courseselection.html#password-changed">Password changed</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="visualization/index.html">Main screen</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="visualization/index.html#menu-bar">Menu bar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/index.html#list-of-registered-users">List of registered users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/index.html#student-s-card">Student's card</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="visualization/logs.html">Log visualization</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#log-options">Log options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#components">Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#events">Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#sections">Sections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#course-module">Course module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#stacked-bar-chart">Stacked bar chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#heatmap-chart">HeatMap chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#cumulative-chart">Cumulative chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#rel-cumulative-chart">Rel. Cumulative chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#scatter-chart">Scatter chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#total-chart">Total chart</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="visualization/grades.html">Grade visualization</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="visualization/grades.html#line-chart">Line chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/grades.html#radar-chart">Radar chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/grades.html#boxplot-chart">Boxplot chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/grades.html#violin-chart">Violin chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/grades.html#grade-table">Grade table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/grades.html#percentage-chart">Percentage chart</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="visualization/activities.html">Activity completion visualization</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Application settings</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#general">General</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#stacked-bars">Stacked bars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#heatmap">Heatmap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#total">Total</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cumulative">Cumulative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rel-cumulatives">Rel. Cumulatives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#boxplot">Boxplot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#violin">Violin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#grades">Grades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">Grades %</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#activity-completion">Activity Completion</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="errormessages.html">Error Messages</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="errormessages.html#message-on-window">Message on window</a></li>
+<li class="toctree-l2"><a class="reference internal" href="errormessages.html#error-dialog">Error dialog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="errormessages.html#usual-errors">Usual errors</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="appendix.html">Appendix. File structure</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="appendix.html#initial-content">Initial Content</a></li>
+<li class="toctree-l2"><a class="reference internal" href="appendix.html#file-and-directory-structure">File and directory structure</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: white" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">UBUMonitor</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Application settings</li>
+
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
+        <a href="visualization/activities.html" class="btn btn-neutral float-left" title="Activity completion visualization" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="errormessages.html" class="btn btn-neutral float-right" title="Error Messages" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="application-settings">
+<span id="configuration"></span><h1>Application settings<a class="headerlink" href="#application-settings" title="Permalink to this headline"></a></h1>
+<p>In the <strong>Tools</strong> menu, the advanced option <strong>Change configuration</strong> is available. This option allows you to customize the initial default values in some displays for the current subject (each subject can have its own settings).</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="_images/Configuracion_general_sin_abrir.png"><img alt="Settings" src="_images/Configuracion_general_sin_abrir.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Settings</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>The configuration modal dialog enables text search. The changes are saved when the dialog is closed. If the initial values are to be restored, the <strong>Restore Defaults</strong> button must be selected.</p>
+<p>The dialog shows the following sections:</p>
+<section id="general">
+<h2>General<a class="headerlink" href="#general" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>File encoding: character set to be used in the export of the generated <code class="docutils literal notranslate"><span class="pre">CSV</span></code> files.</p></li>
+<li><p>Cut-off mark: minimum mark that marks the qualification items or not.</p></li>
+<li><p>Line width</p></li>
+<li><p>Line spacing</p></li>
+<li><p>Chart legend</p></li>
+<li><p>General statistics</p></li>
+<li><p>Group statistics</p></li>
+<li><p>Initial Roles: Selection of roles that are initially marked in the filter by roles.</p></li>
+<li><p>Initial groups: selection of groups that are initially marked in the group filter</p></li>
+<li><p>Last connections: selection of last connection that is initially marked in the filter.</p></li>
+<li><p>Default time unit</p></li>
+<li><p>Y-axis title</p></li>
+<li><p>X-axis title</p></li>
+<li><p>Y-axis font color</p></li>
+<li><p>X-axis font color</p></li>
+</ul>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="_images/Configuracion_general.png"><img alt="General settings" src="_images/Configuracion_general.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">General settings</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="stacked-bars">
+<h2>Stacked bars<a class="headerlink" href="#stacked-bars" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>Calculate maximum: activates automatic calculation.</p></li>
+</ul>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="_images/Configuracion_barras_apiladas.png"><img alt="Stacked bars" src="_images/Configuracion_barras_apiladas.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Stacked bars</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="heatmap">
+<h2>Heatmap<a class="headerlink" href="#heatmap" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>Calculate maximum: activates automatic calculation.</p></li>
+<li><p>With quartiles: calculates the ranges from the quartiles of the current sample, instead of dividing the range into four equal parts.</p></li>
+<li><p>Zero value</p></li>
+<li><p>First interval</p></li>
+<li><p>Second interval</p></li>
+<li><p>Third interval</p></li>
+<li><p>Fourth interval</p></li>
+<li><p>Maximum</p></li>
+</ul>
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="_images/Configuracion_heatmap.png"><img alt="Heatmap" src="_images/Configuracion_heatmap.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Heatmap</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="total">
+<h2>Total<a class="headerlink" href="#total" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>Horizontal mode: changes the display of the bars to horizontal mode.</p></li>
+</ul>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="_images/Configuracion_total.png"><img alt="Total" src="_images/Configuracion_total.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Total</span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="cumulative">
+<h2>Cumulative<a class="headerlink" href="#cumulative" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>Calculate maximum: activates automatic calculation.</p></li>
+</ul>
+<figure class="align-center" id="id7">
+<a class="reference internal image-reference" href="_images/Configuracion_acumulados.png"><img alt="Cumulative" src="_images/Configuracion_acumulados.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Cumulative</span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="rel-cumulatives">
+<h2>Rel. Cumulatives<a class="headerlink" href="#rel-cumulatives" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>Calculate maximum: activates automatic calculation.</p></li>
+<li><p>Zero line color: color applied to the line representing the average</p></li>
+<li><p>Zero line width</p></li>
+</ul>
+<figure class="align-center" id="id8">
+<a class="reference internal image-reference" href="_images/Configuracion_acumulados_relativos.png"><img alt="Rel. Cumulative" src="_images/Configuracion_acumulados_relativos.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Rel. Cumulative</span><a class="headerlink" href="#id8" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="boxplot">
+<h2>Boxplot<a class="headerlink" href="#boxplot" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>Horizontal mode: changes the display of the boxplot to horizontal mode.</p></li>
+<li><p>Decimal information: number of decimals to be displayed in the <em>tooltips</em> with the statistical data.</p></li>
+</ul>
+<figure class="align-center" id="id9">
+<a class="reference internal image-reference" href="_images/Configuracion_boxplot.png"><img alt="Boxplot" src="_images/Configuracion_boxplot.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Boxplot</span><a class="headerlink" href="#id9" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="violin">
+<h2>Violin<a class="headerlink" href="#violin" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>Horizontal mode: changes the display of the violin to horizontal mode.</p></li>
+<li><p>Decimal information: number of decimals to be displayed in the <em>tooltips</em> with the statistical data.</p></li>
+</ul>
+<figure class="align-center" id="id10">
+<a class="reference internal image-reference" href="_images/Configuracion_violin.png"><img alt="Violin" src="_images/Configuracion_violin.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Violin</span><a class="headerlink" href="#id10" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="grades">
+<h2>Grades<a class="headerlink" href="#grades" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>Fail grade color: taking into account the cut-off grade set in the General section.</p></li>
+<li><p>Passed grade color: taking into account the cut-off grade set in the General section.</p></li>
+</ul>
+<figure class="align-center" id="id11">
+<a class="reference internal image-reference" href="_images/Configuracion_calificaciones.png"><img alt="Grades" src="_images/Configuracion_calificaciones.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Grades</span><a class="headerlink" href="#id11" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id1">
+<h2>Grades %<a class="headerlink" href="#id1" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>Empty rating color</p></li>
+<li><p>Fail grade color: taking into account the cut-off grade set in the General section.</p></li>
+<li><p>Passed grade color: taking into account the cut-off grade set in the General section.</p></li>
+</ul>
+<figure class="align-center" id="id12">
+<a class="reference internal image-reference" href="_images/Configuracion_calificaciones_porcentaje.png"><img alt="Grades %" src="_images/Configuracion_calificaciones_porcentaje.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Grades %</span><a class="headerlink" href="#id12" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="activity-completion">
+<h2>Activity Completion<a class="headerlink" href="#activity-completion" title="Permalink to this headline"></a></h2>
+<p>Set the colors for the different intervals of the progress bar.</p>
+<figure class="align-center" id="id13">
+<a class="reference internal image-reference" href="_images/Configuracion_finalizacion_actividad.png"><img alt="Activity Completion" src="_images/Configuracion_finalizacion_actividad.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Activity Completion</span><a class="headerlink" href="#id13" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="visualization/activities.html" class="btn btn-neutral float-left" title="Activity completion visualization" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="errormessages.html" class="btn btn-neutral float-right" title="Error Messages" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020, Yi Peng Ji &amp; Raúl Marticorena.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

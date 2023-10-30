@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Course/subject selection &mdash; UBUMonitor 2.6.3 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Main screen" href="visualization/index.html" />
+    <link rel="prev" title="Login" href="login.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            UBUMonitor
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction and requirements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#installation-requirements">Installation requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#requirements-in-moodle">Requirements in Moodle</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation and start-up</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="install.html#portable-version-for-gnu-linux">Portable version for GNU/Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.html#portable-version-for-windows">Portable version for Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.html#executable-version-with-java-8">Executable version with Java 8</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="login.html">Login</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="login.html#online-mode">Online mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="login.html#offline-mode">Offline mode</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Course/subject selection</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#updating-data">Updating data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cache-cleaning">Cache cleaning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#offline-mode">Offline mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#password-changed">Password changed</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="visualization/index.html">Main screen</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="visualization/index.html#menu-bar">Menu bar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/index.html#list-of-registered-users">List of registered users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/index.html#student-s-card">Student's card</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="visualization/logs.html">Log visualization</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#log-options">Log options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#components">Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#events">Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#sections">Sections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#course-module">Course module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#stacked-bar-chart">Stacked bar chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#heatmap-chart">HeatMap chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#cumulative-chart">Cumulative chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#rel-cumulative-chart">Rel. Cumulative chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#scatter-chart">Scatter chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#total-chart">Total chart</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="visualization/grades.html">Grade visualization</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="visualization/grades.html#line-chart">Line chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/grades.html#radar-chart">Radar chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/grades.html#boxplot-chart">Boxplot chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/grades.html#violin-chart">Violin chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/grades.html#grade-table">Grade table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/grades.html#percentage-chart">Percentage chart</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="visualization/activities.html">Activity completion visualization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Application settings</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#general">General</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#stacked-bars">Stacked bars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#heatmap">Heatmap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#total">Total</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#cumulative">Cumulative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#rel-cumulatives">Rel. Cumulatives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#boxplot">Boxplot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#violin">Violin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#grades">Grades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#id1">Grades %</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#activity-completion">Activity Completion</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="errormessages.html">Error Messages</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="errormessages.html#message-on-window">Message on window</a></li>
+<li class="toctree-l2"><a class="reference internal" href="errormessages.html#error-dialog">Error dialog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="errormessages.html#usual-errors">Usual errors</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="appendix.html">Appendix. File structure</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="appendix.html#initial-content">Initial Content</a></li>
+<li class="toctree-l2"><a class="reference internal" href="appendix.html#file-and-directory-structure">File and directory structure</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: white" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">UBUMonitor</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Course/subject selection</li>
+
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
+        <a href="login.html" class="btn btn-neutral float-left" title="Login" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="visualization/index.html" class="btn btn-neutral float-right" title="Main screen" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="course-subject-selection">
+<h1>Course/subject selection<a class="headerlink" href="#course-subject-selection" title="Permalink to this headline"></a></h1>
+<p>At the top, the user, host url, login date, and working mode (onlines vs. offlines) are displayed. The <strong>Logout</strong> button allows you to return to the previous login window, closing the current one.</p>
+<p>The main area shows the list of courses (or subjects) in which the current user is registered. It is possible to select one of them, to carry out the data loading and to access the following screen. The subjects are presented in alphabetical order in tabs as follows:</p>
+<ul class="simple">
+<li><p><strong>Recent</strong>: courses recently accessed by the user.</p></li>
+<li><p><strong>Highlighted</strong>: courses highlighted by the user.</p></li>
+<li><p><strong>All</strong>: complete set of courses in which the user is enrolled.</p></li>
+<li><p><strong>In progress</strong>: current course, with start and end date including the current date.</p></li>
+<li><p><strong>Futures</strong>: courses to be taken, with a start date later than the current date.</p></li>
+<li><p><strong>Past</strong>: courses already completed, with an end date prior to the current date.</p></li>
+</ul>
+<p><em>Note</em>: it is the user's responsibility to classify the courses as <em>highlighted</em> (and even <em>hidden</em>) in their <em>Dashboard</em> of Moodle. The start and end dates of each course are customized in <em>Edit Settings</em> for each subject.</p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="_images/Seleccion_de_curso.png"><img alt="Course/suject selection in first access" src="_images/Seleccion_de_curso.png" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-text">Course/suject selection in first access</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>The first time a course is selected the text <strong>Last local update</strong> will be displayed and the option to <strong>Update data</strong> is checked by default to force the download of data from the server.</p>
+<p>Additionally the <strong>advanced option</strong> of downloading <strong>Web logs only</strong> is left if you want to download only logs from the browser (ignoring client, <em>web service</em>, <em>restore</em> or unclassified logs). By default it is unchecked and only recommended for advanced users.</p>
+<p>We press the button <strong>Enter</strong> to start the download. This data download process may <strong>take several minutes for the first download</strong> (depending on the number of students, size of the gradebook, number of new logs and activities with active completion tracking).</p>
+<p>A progress bar will be displayed at the bottom indicating the stages completed (uploading of the gradebook, downloading of activity completion, downloading of the log and parsing of logs). <strong>Further updates will be shorter</strong>, as the log loading is incremental, although the gradebook and activity completion is always fully updated.</p>
+<p>On the other hand, it is <strong>VERY IMPORTANT</strong> that the percentage information is visible in the gradebook configuration (by default it is visible in Moodle) for correct reading and subsequent display of the grades.</p>
+<p>Once the download is finished, the main window of the application will be shown.</p>
+<section id="updating-data">
+<h2>Updating data<a class="headerlink" href="#updating-data" title="Permalink to this headline"></a></h2>
+<p>In subsequent accesses to previously loaded courses, the date of <strong>Last local update</strong> will already be shown and the option to mark, or not, the option <strong>Update data</strong> will be given.</p>
+<p>If we want to force the update of data with the current content of the server, we must mark this option manually. Otherwise, the data from the local cache (which might be outdated) will be loaded and displayed.</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="_images/Seleccion_de_curso_recargar_asignatura.png"><img alt="Course selection by reloading" src="_images/Seleccion_de_curso_recargar_asignatura.png" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-text">Subsequent access to previously loaded course</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="cache-cleaning">
+<h2>Cache cleaning<a class="headerlink" href="#cache-cleaning" title="Permalink to this headline"></a></h2>
+<p>By selecting a previously loaded subject, the <strong>Clean</strong> button will be activated. This button allows us to clear the local cache of our current UBUMonitor installation.</p>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="_images/Boton_limpiar.png"><img alt="Cache cleaning" src="_images/Boton_limpiar.png" style="width: 100px;" /></a>
+<figcaption>
+<p><span class="caption-text">Cache cleaning</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>When the cache disappears, the subject is detected as not previously loaded, always forcing the use of the <strong>Update data</strong> option in the next subsequent access.</p>
+<p>This option is useful to delete files of subjects that are no longer going to be accessed in the future or when the installed version of UBUMonitor detects problems with the local file version and it is necessary to delete it (see Sec. <a class="reference internal" href="errormessages.html#errormessages"><span class="std std-ref">Error Messages</span></a>).</p>
+</section>
+<section id="offline-mode">
+<h2>Offline mode<a class="headerlink" href="#offline-mode" title="Permalink to this headline"></a></h2>
+<p>If we have selected access in <strong>Offline mode</strong> only the subjects available in the local cache will be shown, in the <em>Local files</em> tab. In this mode it is not possible to update data, but it is possible to access the full data display functionality.</p>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="_images/Seleccion_de_curso_offline.png"><img alt="Offline course/subject selection" src="_images/Seleccion_de_curso_offline.png" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-text">Offline course/subject selection</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="password-changed">
+<h2>Password changed<a class="headerlink" href="#password-changed" title="Permalink to this headline"></a></h2>
+<p>In the case that the Moodle password has been changed recently, a pop-up window is displayed, indicating that a change has been detected and asking for the previous password, which was held on the date indicated.</p>
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="_images/password_antiguo.png"><img alt="Password changed" src="_images/password_antiguo.png" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-text">Password changed</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>When the old password has been successfully entered, the local cached file is encrypted and saved with the new password. This is <strong>required</strong>, because the information is <strong>always encrypted</strong>.</p>
+<p><strong>VERY IMPORTANT</strong>: It is necessary to remember the previous password, in order to recover the data. If not, the cache must be cleared (<strong>Clean</strong> button), to force the courses to be reloaded.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="login.html" class="btn btn-neutral float-left" title="Login" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="visualization/index.html" class="btn btn-neutral float-right" title="Main screen" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020, Yi Peng Ji &amp; Raúl Marticorena.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

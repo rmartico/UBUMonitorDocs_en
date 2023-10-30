@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Main screen &mdash; UBUMonitor 2.6.3 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Log visualization" href="logs.html" />
+    <link rel="prev" title="Course/subject selection" href="../courseselection.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            UBUMonitor
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction and requirements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../introduction.html#installation-requirements">Installation requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introduction.html#requirements-in-moodle">Requirements in Moodle</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation and start-up</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../install.html#portable-version-for-gnu-linux">Portable version for GNU/Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../install.html#portable-version-for-windows">Portable version for Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../install.html#executable-version-with-java-8">Executable version with Java 8</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../login.html">Login</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../login.html#online-mode">Online mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../login.html#offline-mode">Offline mode</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../courseselection.html">Course/subject selection</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../courseselection.html#updating-data">Updating data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../courseselection.html#cache-cleaning">Cache cleaning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../courseselection.html#offline-mode">Offline mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../courseselection.html#password-changed">Password changed</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Main screen</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#menu-bar">Menu bar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#list-of-registered-users">List of registered users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#student-s-card">Student's card</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="logs.html">Log visualization</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="logs.html#log-options">Log options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logs.html#components">Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logs.html#events">Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logs.html#sections">Sections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logs.html#course-module">Course module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logs.html#stacked-bar-chart">Stacked bar chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logs.html#heatmap-chart">HeatMap chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logs.html#cumulative-chart">Cumulative chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logs.html#rel-cumulative-chart">Rel. Cumulative chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logs.html#scatter-chart">Scatter chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logs.html#total-chart">Total chart</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="grades.html">Grade visualization</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="grades.html#line-chart">Line chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="grades.html#radar-chart">Radar chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="grades.html#boxplot-chart">Boxplot chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="grades.html#violin-chart">Violin chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="grades.html#grade-table">Grade table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="grades.html#percentage-chart">Percentage chart</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="activities.html">Activity completion visualization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuration.html">Application settings</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../configuration.html#general">General</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuration.html#stacked-bars">Stacked bars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuration.html#heatmap">Heatmap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuration.html#total">Total</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuration.html#cumulative">Cumulative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuration.html#rel-cumulatives">Rel. Cumulatives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuration.html#boxplot">Boxplot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuration.html#violin">Violin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuration.html#grades">Grades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuration.html#id1">Grades %</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuration.html#activity-completion">Activity Completion</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../errormessages.html">Error Messages</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../errormessages.html#message-on-window">Message on window</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../errormessages.html#error-dialog">Error dialog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../errormessages.html#usual-errors">Usual errors</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix.html">Appendix. File structure</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../appendix.html#initial-content">Initial Content</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../appendix.html#file-and-directory-structure">File and directory structure</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: white" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">UBUMonitor</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Main screen</li>
+
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
+        <a href="../courseselection.html" class="btn btn-neutral float-left" title="Course/subject selection" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="logs.html" class="btn btn-neutral float-right" title="Log visualization" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="main-screen">
+<h1>Main screen<a class="headerlink" href="#main-screen" title="Permalink to this headline"></a></h1>
+<p>The main screen is divided into:</p>
+<ul class="simple">
+<li><p>In the upper area on the <em>menu bar</em>, the different existing menus .</p></li>
+<li><p>In the upper left corner, the <em>list of registered users</em> including number and filters by role, group and latest connection date.</p></li>
+<li><p>In the lower left corner, the selection of logs, grades or completion of activity.</p></li>
+<li><p>In the central area, the different active charts and filters, according to the previous selection.</p></li>
+<li><p>In the upper right corner the photo of the current user. A context menu is available to see his name, to close session in the server or to exit the application.</p></li>
+<li><p>In the lower left area, there is a connection mode button (green for online vs. red for offline), the name of the loaded subject and the host we are currently accessing.</p></li>
+<li><p>In the lower right area it is shown the date and time of the latest update of the local data being displayed.</p></li>
+</ul>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="../_images/Ventana_principal_de_inicio.png"><img alt="Main screen" src="../_images/Ventana_principal_de_inicio.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Initial main screen</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>In the user and log/grade and activity views, multiple selection of individual elements is allowed by holding down the &quot;Control&quot; key while selecting them with the mouse, and of adjacent elements by pressing the &quot;Shift&quot; key. The combination &quot;Ctrl&quot; + &quot;A&quot; selects all the elements of the view.</p>
+<p>In the charts and tables generated in the central area, a context menu is always enabled (with the right mouse button), allowing the <strong>export of data</strong> in:</p>
+<ul class="simple">
+<li><p>Graphic format <code class="docutils literal notranslate"><span class="pre">PNG</span></code>.</p></li>
+<li><p>Text format <code class="docutils literal notranslate"><span class="pre">CSV</span></code>.</p></li>
+<li><p>CVS&quot; text format, breaking down the data (if this option is available)</p></li>
+</ul>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="../_images/Menu_contextual_exportacion.png"><img alt="Export contextual menu" src="../_images/Menu_contextual_exportacion.png" style="width: 200px;" /></a>
+<figcaption>
+<p><span class="caption-text">Export contextual menu</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p><strong>Note: Many screenshots in this manual have been taken against data on the free **Mount Orange School</strong> server available at <a class="reference external" href="https://school.moodledemo.net">https://school.moodledemo.net</a>. Our thanks and appreciation to the Moodle development group who have given us their approval.</p>
+<section id="menu-bar">
+<h2>Menu bar<a class="headerlink" href="#menu-bar" title="Permalink to this headline"></a></h2>
+<p>At the top of the window there is a menu bar with different options. Keyboard shortcuts are enabled by pressing the ALT key:</p>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="../_images/Barra_de_herramientas.png"><img alt="Menu bar" src="../_images/Barra_de_herramientas.png" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-text">Menu bar</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p><strong>File</strong></p>
+<ul>
+<li><p><strong>Change subject</strong>: closes the current window and returns to the <strong>Course Selection</strong> window.</p></li>
+<li><p><strong>Update course</strong>: downloads the most recent logs and updates grades and completion of activities for the current course, via the web. This option is not available in offline mode.</p></li>
+<li><p><strong>Export CSV data</strong>: exports the data of the current course, in <code class="docutils literal notranslate"><span class="pre">.csv</span></code> format to the selected folder. It generates the following 8 files:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">course_modules.csv</span></code>: contains the course modules</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">courses.csv</span></code>: information about the courses in which the students are enrolled.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">enrolled_users.csv</span></code>: students enrolled.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">grades.csv</span></code>: grades.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">groups.csv</span></code>: groups.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">logs.csv</span></code>: complete logs.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">roles.csv</span></code>: active roles.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sections.csv</span></code>: course sections.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>Logout</strong>: closes the current session and returns to the login screen.</p></li>
+<li><p><strong>Exit</strong>: closes the application.</p></li>
+</ul>
+<p><strong>Edit</strong></p>
+<ul class="simple">
+<li><p><strong>Delete selection</strong>: removes the current selection from all available views.</p></li>
+</ul>
+<p><strong>View</strong></p>
+<ul class="simple">
+<li><p><strong>Themes</strong>: allows you to select different display themes by changing the visual appearance of the application. Three themes are available: Modena, Caspian and Bootstrap 3.</p></li>
+</ul>
+<p><strong>Tools</strong></p>
+<ul class="simple">
+<li><p><strong>Change configuration</strong>: allows to customize general and particular operation and display options of each type of generated chart. Once the changes have been selected, click on the close window button (the changes are applied automatically). Selecting the <strong>Restore Default Values</strong> button restores the initial values configured in the application.</p></li>
+</ul>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="../_images/Configuracion.png"><img alt="Configuration" src="../_images/Configuracion.png" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-text">Configuration</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p><strong>Import configuration</strong>: allows to import a configuration previously stored by the user for a subject.</p></li>
+<li><p><strong>Export configuration</strong>: exports the current options configured in the subject by the user.</p></li>
+</ul>
+<p><strong>Help</strong></p>
+<ul class="simple">
+<li><p><strong>Course statistics</strong>: shows a brief summary of the current data of the course such as number of users, number of logs, etc.</p></li>
+</ul>
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="../_images/estadisticas.png"><img alt="Basic statistics of the current subject" src="../_images/estadisticas.png" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-text">Basic statistics of the current subject</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p><strong>More info</strong>: opens the GitHub project in the default browser window.</p></li>
+<li><p><strong>About the application</strong>: Shows the general information of the application regarding version, authors and acknowledgements.</p></li>
+</ul>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="../_images/Acerca_de.png"><img alt="About..." src="../_images/Acerca_de.png" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-text">Information about the application</span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="list-of-registered-users">
+<h2>List of registered users<a class="headerlink" href="#list-of-registered-users" title="Permalink to this headline"></a></h2>
+<p>This view shows the list of users enrolled in the course, along with their photo and the time since their latest access to the current course and Moodle platform in either minutes, hours or days. The system time is taken as a reference.</p>
+<figure class="align-center" id="id7">
+<a class="reference internal image-reference" href="../_images/lista_usuarios_matriculados.png"><img alt="List of registered users" src="../_images/lista_usuarios_matriculados.png" style="width: 300px;" /></a>
+<figcaption>
+<p><span class="caption-text">List of registered users</span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>Users are coloured, according to their latest connection date to the course, to facilitate the detection of <strong>risk of abandonment</strong>, using the following coding:</p>
+<ul class="simple">
+<li><p>Red: if they have not connected for more than 13 days.</p></li>
+<li><p><em>Yellow</em>: if they have been online for 7 to 12 days.</p></li>
+<li><p>Blue: if they have been online for 3 to 6 days</p></li>
+<li><p>Green: if they have logged on in the last 2 days.</p></li>
+</ul>
+<p>It also gives the option of applying four filters together, with multiple selection:</p>
+<ul class="simple">
+<li><p><strong>Text field</strong>: filter the list by name and/or surname.</p></li>
+<li><p><strong>Role Selector</strong>: select the role you want to filter by (e.g. student, teacher, non-editor teacher, etc.)</p></li>
+<li><p><strong>Group selector</strong>: select the group you want to filter by.</p></li>
+<li><p><strong>Last Connection Selector</strong>: latest access selector.</p></li>
+</ul>
+<p>In the upper left corner, the number of participants that comply with the applied filters is displayed.</p>
+</section>
+<section id="student-s-card">
+<h2>Student's card<a class="headerlink" href="#student-s-card" title="Permalink to this headline"></a></h2>
+<p>If we select a student with the right button, a contextual menu appears <em>View &lt;user name&gt;</em> that launches a dialog to show the student's card.</p>
+<figure class="align-center" id="id8">
+<a class="reference internal image-reference" href="../_images/Ficha_de_alumnos.png"><img alt="Student's card" src="../_images/Ficha_de_alumnos.png" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-text">Student's card</span><a class="headerlink" href="#id8" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>This card shows: name, surname, email, latest access dates to the subject and to Moodle, first access date to Moodle, roles, groups and number of courses/subjects you are enrolled in.</p>
+<p>Coloured circles are used to indicate the date of latest login to the subject, or to Moodle, using the same criteria as seen previously in the list of registered users (i.e. red, yellow, blue or green).</p>
+<p>In the right area, the complete list of courses in which you are enrolled is displayed. The list is shown by identifier, but can be sorted alphabetically in ascending or descending order by clicking on <strong>Enrolled courses</strong>.</p>
+<p>The buttons at the bottom with arrows to the left and right allow you to go forward or backward in the list of students, updating the data.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../courseselection.html" class="btn btn-neutral float-left" title="Course/subject selection" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="logs.html" class="btn btn-neutral float-right" title="Log visualization" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020, Yi Peng Ji &amp; Raúl Marticorena.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

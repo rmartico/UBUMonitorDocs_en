@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Installation and start-up &mdash; UBUMonitor 2.6.3 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Login" href="login.html" />
+    <link rel="prev" title="Introduction and requirements" href="introduction.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            UBUMonitor
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction and requirements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#installation-requirements">Installation requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#requirements-in-moodle">Requirements in Moodle</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation and start-up</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#portable-version-for-gnu-linux">Portable version for GNU/Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#portable-version-for-windows">Portable version for Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#executable-version-with-java-8">Executable version with Java 8</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="login.html">Login</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="login.html#online-mode">Online mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="login.html#offline-mode">Offline mode</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="courseselection.html">Course/subject selection</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="courseselection.html#updating-data">Updating data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="courseselection.html#cache-cleaning">Cache cleaning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="courseselection.html#offline-mode">Offline mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="courseselection.html#password-changed">Password changed</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="visualization/index.html">Main screen</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="visualization/index.html#menu-bar">Menu bar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/index.html#list-of-registered-users">List of registered users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/index.html#student-s-card">Student's card</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="visualization/logs.html">Log visualization</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#log-options">Log options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#components">Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#events">Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#sections">Sections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#course-module">Course module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#stacked-bar-chart">Stacked bar chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#heatmap-chart">HeatMap chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#cumulative-chart">Cumulative chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#rel-cumulative-chart">Rel. Cumulative chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#scatter-chart">Scatter chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/logs.html#total-chart">Total chart</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="visualization/grades.html">Grade visualization</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="visualization/grades.html#line-chart">Line chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/grades.html#radar-chart">Radar chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/grades.html#boxplot-chart">Boxplot chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/grades.html#violin-chart">Violin chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/grades.html#grade-table">Grade table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualization/grades.html#percentage-chart">Percentage chart</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="visualization/activities.html">Activity completion visualization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Application settings</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#general">General</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#stacked-bars">Stacked bars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#heatmap">Heatmap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#total">Total</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#cumulative">Cumulative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#rel-cumulatives">Rel. Cumulatives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#boxplot">Boxplot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#violin">Violin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#grades">Grades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#id1">Grades %</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#activity-completion">Activity Completion</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="errormessages.html">Error Messages</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="errormessages.html#message-on-window">Message on window</a></li>
+<li class="toctree-l2"><a class="reference internal" href="errormessages.html#error-dialog">Error dialog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="errormessages.html#usual-errors">Usual errors</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="appendix.html">Appendix. File structure</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="appendix.html#initial-content">Initial Content</a></li>
+<li class="toctree-l2"><a class="reference internal" href="appendix.html#file-and-directory-structure">File and directory structure</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: white" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">UBUMonitor</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Installation and start-up</li>
+
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
+        <a href="introduction.html" class="btn btn-neutral float-left" title="Introduction and requirements" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="login.html" class="btn btn-neutral float-right" title="Login" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="installation-and-start-up">
+<h1>Installation and start-up<a class="headerlink" href="#installation-and-start-up" title="Permalink to this headline"></a></h1>
+<p>To install the program, download the latest version available at: <a class="reference external" href="https://github.com/yjx0003/UBUMonitor/releases/latest">https://github.com/yjx0003/UBUMonitor/releases/latest</a>.</p>
+<p>An entry similar to the following will be displayed, displaying the <strong>Assets</strong> item (<em>Note: version numbers will change in the future as the product evolves</em>):</p>
+<figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="_images/Release_Github.png"><img alt="Latest release in GitHub" src="_images/Release_Github.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Download from UBUMonitor GitHub</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>The possible files to download for execution (and development with the source codes) are shown. For installation only the following files are required:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">UBUMonitor.v2.6.3-stable-Linux64-Portable.xz</span></code>: portable version for 64-bit GNU/Linux operating system.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">UBUMonitor.v2.6.3-stable-Win32-Portable.zip</span></code>: portable version for 32-bit Windows operating system.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">UBUMonitor.v2.6.3-stable-Win64-Portable.zip</span></code>: portable version for 64-bit Windows operating system.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">UBUMonitor.v2.6.3-stable.jar</span></code>: multi-platform version with Java installed in the operating system. Version for Windows, GNU/Linux or Mac.</p></li>
+</ul>
+<p>Two versions are offered:</p>
+<ul class="simple">
+<li><p>Portable version (with minimum installation) for <strong>Windows</strong> (decompressing the .zip file) and <strong>GNU/Linux</strong> (decompressing the .xz file).</p></li>
+<li><p>Version of the java executable file (with extension <code class="docutils literal notranslate"><span class="pre">.jar</span></code>) for <strong>ALL</strong> platforms.</p></li>
+</ul>
+<p><strong>It is recommended to use the portable versions because the executables and scripts are optimized for their execution, as well as containing the version of Java and JavaFX with which the application under development has been tested.</strong></p>
+<section id="portable-version-for-gnu-linux">
+<h2>Portable version for GNU/Linux<a class="headerlink" href="#portable-version-for-gnu-linux" title="Permalink to this headline"></a></h2>
+<p>If you are working on GNU/Linux, and do not want to install Java on your current computer (or do not want to change your settings), we suggest downloading the 64-bit portable version.</p>
+<p>Installation steps:</p>
+<ul class="simple">
+<li><p>Copy the downloaded file with the suffix <code class="docutils literal notranslate"><span class="pre">Portable.tar.xz</span></code> to a directory of your choice, where you have write and execute permissions.</p></li>
+<li><p>Decompress the file with the suffix <code class="docutils literal notranslate"><span class="pre">Portable.tar.xz</span></code> corresponding to some tool type tar, gzip, bzip2, etc. For example: <code class="docutils literal notranslate"><span class="pre">tar</span> <span class="pre">-Jxf</span> <span class="pre">UBUMonitor.v2.6.3-stable-Linux64-Portable.tar.xz</span></code>.</p></li>
+<li><p>In the directory generated by unzipping, run the <code class="docutils literal notranslate"><span class="pre">run.sh</span></code> script. It may be necessary to give execution permissions to this script with the command <code class="docutils literal notranslate"><span class="pre">chmod</span> <span class="pre">+x</span> <span class="pre">run.sh</span></code>.</p></li>
+</ul>
+<p><em>Note: the portable versions include inside the ``tar.xz`` file a JRE 8 with JavaFX, so they take more space.</em></p>
+</section>
+<section id="portable-version-for-windows">
+<h2>Portable version for Windows<a class="headerlink" href="#portable-version-for-windows" title="Permalink to this headline"></a></h2>
+<p>If you work in Windows, and you do not want to install Java in your current computer (or you do not want to change the configuration), we suggest downloading the corresponding portable version, depending on whether the operating system is 32 or 64 bits.</p>
+<p>Installation steps:</p>
+<ul class="simple">
+<li><p>Copy the downloaded file with the suffix <code class="docutils literal notranslate"><span class="pre">Portable.zip</span></code> to a directory of your choice, where you have writing and execution permissions.</p></li>
+<li><p>Decompress the file with the suffix <code class="docutils literal notranslate"><span class="pre">Portable.zip</span></code> with a tool such as WinZip, 7Zip, WinRar, etc.</p></li>
+<li><p>In the directory generated when decompressing, double click on the executable file with extension <code class="docutils literal notranslate"><span class="pre">.exe</span></code> (e.g. <code class="docutils literal notranslate"><span class="pre">UBUMonitor.v2.6.3-stable-Win64.exe</span></code>)</p></li>
+</ul>
+<p><em>Note: the portable versions include inside the ``.zip`` file a JRE 8 with JavaFX, so they take more space.</em></p>
+</section>
+<section id="executable-version-with-java-8">
+<h2>Executable version with Java 8<a class="headerlink" href="#executable-version-with-java-8" title="Permalink to this headline"></a></h2>
+<p>If you do not want or can use the portable version, a version of the Java 8 Runtime Environment (JRE) is required. In particular the official distribution of <a class="reference external" href="https://www.oracle.com/java/technologies/javase-jre8-downloads.html">Oracle which includes the JavaFX libraries</a> or versions such as <a class="reference external" href="https://www.azul.com/downloads/zulu-community/">Zulu with FX</a>. With later versions <strong>NO</strong> it will work correctly, as well as with free versions (e.g. OpenJDK, AdoptOpenJDK, Amazon Correto, etc.) that do not include the JavaFX libraries (JavaFX would have to be installed additionally).</p>
+<p>Assuming that you already have this Java 8 version installed (and that it is the active version of Java) follow the next steps:</p>
+<ol class="arabic simple">
+<li><p>Copy the <code class="docutils literal notranslate"><span class="pre">.jar</span></code> file to a directory where the user has write and execute permissions.</p></li>
+<li><p>Try to execute it by double clicking on the <code class="docutils literal notranslate"><span class="pre">.jar</span></code> file.</p></li>
+</ol>
+<p>If Java is correctly associated with the <code class="docutils literal notranslate"><span class="pre">.jar</span></code> extension, the application will be executed.
+If not, execute from an operating system console, in the directory where you have the <code class="docutils literal notranslate"><span class="pre">.jar</span></code> file the following:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">$&gt;</span> <span class="pre">java</span> <span class="pre">-jar</span> <span class="pre">UBUMonitor.v2.6.3-stable.jar</span></code></p></li>
+</ul>
+<p><em>Note: the version number may change.</em></p>
+<p>If everything is correct, the application will start running. If not, check again the previous steps.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="introduction.html" class="btn btn-neutral float-left" title="Introduction and requirements" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="login.html" class="btn btn-neutral float-right" title="Login" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020, Yi Peng Ji &amp; Raúl Marticorena.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

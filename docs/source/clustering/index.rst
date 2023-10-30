@@ -92,7 +92,7 @@ The elbow plot and the silhouette value analysis are provided. By choosing one o
   :alt: Suggested number of clusters
   :align: center
   
- Suggested number of groupings or clusters
+  Suggested number of groupings or clusters
   
 The following example shows the elbow plot.
 
